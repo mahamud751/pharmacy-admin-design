@@ -1,0 +1,2185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AdminLTE 3 | DataTables</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css" />
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css" />
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css" />
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css" />
+    <!-- summernote -->
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css" />
+  </head>
+  <body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="index3.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+          <!-- Navbar Search -->
+          <li class="nav-item">
+            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+              <i class="fas fa-search"></i>
+            </a>
+            <div class="navbar-search-block">
+              <form class="form-inline">
+                <div class="input-group input-group-sm">
+                  <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search" />
+                  <div class="input-group-append">
+                    <button class="btn btn-navbar" type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+
+          <!-- Messages Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="far fa-comments"></i>
+              <span class="badge badge-danger navbar-badge">3</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle" />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      Brad Diesel
+                      <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">Call me whenever you can...</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      John Pierce
+                      <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">I got your message bro</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      Nora Silvester
+                      <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">The subject goes here</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+            </div>
+          </li>
+          <!-- Notifications Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="far fa-bell"></i>
+              <span class="badge badge-warning navbar-badge">15</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <span class="dropdown-item dropdown-header">15 Notifications</span>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-envelope mr-2"></i> 4 new messages
+                <span class="float-right text-muted text-sm">3 mins</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-users mr-2"></i> 8 friend requests
+                <span class="float-right text-muted text-sm">12 hours</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-file mr-2"></i> 3 new reports
+                <span class="float-right text-muted text-sm">2 days</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+              <i class="fas fa-expand-arrows-alt"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+              <i class="fas fa-th-large"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.navbar -->
+
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index3.html" class="brand-link">
+          <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8" />
+          <span class="brand-text font-weight-light">Pharmacy Admin</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar user panel (optional) -->
+          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+              <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
+            </div>
+            <div class="info">
+              <a href="#" class="d-block">Alex</a>
+            </div>
+          </div>
+
+          <!-- SidebarSearch Form -->
+          <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search">
+              <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search" />
+              <div class="input-group-append">
+                <button class="btn btn-sidebar">
+                  <i class="fas fa-search fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link active">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>
+                    Dashboard
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./index.html" class="nav-link active">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Dashboard v1</p>
+                    </a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a href="./index2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Dashboard v2</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./index3.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Dashboard v3</p>
+                    </a>
+                  </li> -->
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Customer
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">5</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="addCustomer.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Customer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Customer List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Credit Customer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Paid Customer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Customer Ledger</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Manufacturer
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">3</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Manufacturer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Manufacturer List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Manufacturer Ledger</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Medicine
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">9</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Category</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Category List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Unit</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Unit List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Type</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Type List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Leaf Setting</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Medicine</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Medicine List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Purchase
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">2</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Purchaser</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Purchase List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Invoice
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">3</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Invoice</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>POS Invoice</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Invoice List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Return
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">4</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Invoice</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Invoice Return List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Manufacturer Return List</p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Wastage Return List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Stock
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">3</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Stock Report</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Stock Report(Batch Wise)</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Available Stock</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Bank
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">2</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Bank</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Bank List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Accounts
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">10</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Chart Of Accounts</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Opening Balance</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Manufacturer Payment</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Customer Receive</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Cash Adjustment</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Debit Voucher</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Credit Voucher</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Contra Voucher</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Journal Voucher</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Voucher List</p>
+                    </a>
+                  </li>
+                  <p>Report</p>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Report</p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="pages/layout/top-nav.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Cash Book</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Bank Book</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="pages/layout/boxed.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>General Ledger</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="pages/layout/fixed-sidebar.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Trial Balance</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Profit Loss</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Cash Flow</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>COA Print</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Balance Sheet</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Report
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">10</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Closing</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Closing List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Sales Report</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Sales Report (User)</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Sales Report (Product)</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Sales Report (Category)</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Purchase Report</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Purchase Report(Category)</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Human Resource
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">5</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Customer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Customer List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Credit Customer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Paid Customer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Customer Ledger</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Tax
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">3</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Tax Settings</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Income Tax</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Income Tax List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Service
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">4</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Service</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Service List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Invoice</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Invoice List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Search
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">3</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Medicine Search</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Invoice Search</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Purchase Search</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Application Setting
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">12</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add User</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>User List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Currency</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Setting</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Download Backup</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Restore Database</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Database Import</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Panel Setting</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Role</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Role List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Assign Role</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Language</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Autoupdate
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">1</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Autoupdate</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="pages/widgets.html" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                    Widgets
+                    <span class="right badge badge-danger">New</span>
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Layout Options
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">6</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Top Navigation</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Top Navigation + Sidebar</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Boxed</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Fixed Sidebar</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Fixed Sidebar <small>+ Custom Area</small></p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-topnav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Fixed Navbar</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-footer.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Fixed Footer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/collapsed-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Collapsed Sidebar</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-chart-pie"></i>
+                  <p>
+                    Charts
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/charts/chartjs.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>ChartJS</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/charts/flot.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Flot</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/charts/inline.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Inline</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/charts/uplot.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>uPlot</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-tree"></i>
+                  <p>
+                    UI Elements
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/UI/general.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>General</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/UI/icons.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Icons</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/UI/buttons.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Buttons</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/UI/sliders.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Sliders</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/UI/modals.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Modals & Alerts</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/UI/navbar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Navbar & Tabs</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/UI/timeline.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Timeline</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/UI/ribbons.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Ribbons</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-edit"></i>
+                  <p>
+                    Forms
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/forms/general.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>General Elements</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/forms/advanced.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Advanced Elements</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/forms/editors.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Editors</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/forms/validation.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Validation</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-table"></i>
+                  <p>
+                    Tables
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/tables/simple.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Simple Tables</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/tables/data.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>DataTables</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/tables/jsgrid.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>jsGrid</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-header">EXAMPLES</li>
+              <li class="nav-item">
+                <a href="pages/calendar.html" class="nav-link">
+                  <i class="nav-icon far fa-calendar-alt"></i>
+                  <p>
+                    Calendar
+                    <span class="badge badge-info right">2</span>
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/gallery.html" class="nav-link">
+                  <i class="nav-icon far fa-image"></i>
+                  <p>Gallery</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/kanban.html" class="nav-link">
+                  <i class="nav-icon fas fa-columns"></i>
+                  <p>Kanban Board</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon far fa-envelope"></i>
+                  <p>
+                    Mailbox
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/mailbox/mailbox.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Inbox</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/mailbox/compose.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Compose</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/mailbox/read-mail.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Read</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-book"></i>
+                  <p>
+                    Pages
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/examples/invoice.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Invoice</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/profile.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Profile</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/e-commerce.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>E-commerce</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/projects.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Projects</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/project-add.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Project Add</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/project-edit.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Project Edit</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/project-detail.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Project Detail</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/contacts.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Contacts</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/faq.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>FAQ</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/contact-us.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Contact us</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon far fa-plus-square"></i>
+                  <p>
+                    Extras
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>
+                        Login & Register v1
+                        <i class="fas fa-angle-left right"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="pages/examples/login.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Login v1</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="pages/examples/register.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Register v1</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="pages/examples/forgot-password.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Forgot Password v1</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="pages/examples/recover-password.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Recover Password v1</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>
+                        Login & Register v2
+                        <i class="fas fa-angle-left right"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="pages/examples/login-v2.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Login v2</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="pages/examples/register-v2.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Register v2</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="pages/examples/forgot-password-v2.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Forgot Password v2</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="pages/examples/recover-password-v2.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Recover Password v2</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/lockscreen.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Lockscreen</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/legacy-user-menu.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Legacy User Menu</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/language-menu.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Language Menu</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/404.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Error 404</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/500.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Error 500</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/pace.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Pace</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/examples/blank.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Blank Page</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="starter.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Starter Page</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-search"></i>
+                  <p>
+                    Search
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/search/simple.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Simple Search</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/search/enhanced.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Enhanced</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-header">MISCELLANEOUS</li>
+              <li class="nav-item">
+                <a href="iframe.html" class="nav-link">
+                  <i class="nav-icon fas fa-ellipsis-h"></i>
+                  <p>Tabbed IFrame Plugin</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://adminlte.io/docs/3.1/" class="nav-link">
+                  <i class="nav-icon fas fa-file"></i>
+                  <p>Documentation</p>
+                </a>
+              </li>
+              <li class="nav-header">MULTI LEVEL EXAMPLE</li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-circle nav-icon"></i>
+                  <p>Level 1</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-circle"></i>
+                  <p>
+                    Level 1
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Level 2</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>
+                        Level 2
+                        <i class="right fas fa-angle-left"></i>
+                      </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="far fa-dot-circle nav-icon"></i>
+                          <p>Level 3</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="far fa-dot-circle nav-icon"></i>
+                          <p>Level 3</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <i class="far fa-dot-circle nav-icon"></i>
+                          <p>Level 3</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Level 2</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-circle nav-icon"></i>
+                  <p>Level 1</p>
+                </a>
+              </li>
+              <li class="nav-header">LABELS</li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon far fa-circle text-danger"></i>
+                  <p class="text">Important</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon far fa-circle text-warning"></i>
+                  <p>Warning</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon far fa-circle text-info"></i>
+                  <p>Informational</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6"></div>
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active">DataTables</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12 col-md-12">
+                <div class="card">
+                  <div class="card-header py-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <h6 class="fs-17 font-weight-600 mb-0">Available Report</h6>
+                      </div>
+                      <div class="text-right">
+                        <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/stock/stock_list_batchWise" class="btn btn-success btn-sm mr-1"
+                          ><i class="fas fa-align-justify mr-1"></i>Available</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <div id="StockList_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="dt-buttons btn-group flex-wrap">
+                              <button
+                                class="btn btn-secondary buttons-copy buttons-html5 btn-light"
+                                tabindex="0"
+                                aria-controls="StockList"
+                                type="button"
+                                title="Copy"
+                              >
+                                <span><i class="far fa-copy"></i></span>
+                              </button>
+                              <button
+                                class="btn btn-secondary buttons-excel buttons-html5 btn-light"
+                                tabindex="0"
+                                aria-controls="StockList"
+                                type="button"
+                                title="Excel"
+                              >
+                                <span><i class="far fa-file-excel"></i></span>
+                              </button>
+                              <button
+                                class="btn btn-secondary buttons-csv buttons-html5 btn-light"
+                                tabindex="0"
+                                aria-controls="StockList"
+                                type="button"
+                                title="CSV"
+                              >
+                                <span><i class="far fa-file-alt"></i></span>
+                              </button>
+                              <button
+                                class="btn btn-secondary buttons-pdf buttons-html5 btn-light"
+                                tabindex="0"
+                                aria-controls="StockList"
+                                type="button"
+                                title="PDF"
+                              >
+                                <span><i class="far fa-file-pdf"></i></span>
+                              </button>
+                            </div>
+                            <div class="dataTables_length" id="StockList_length">
+                              <label
+                                >Show
+                                <select name="StockList_length" aria-controls="StockList" class="custom-select custom-select-sm form-control form-control-sm">
+                                  <option value="25">25</option>
+                                  <option value="50">50</option>
+                                  <option value="100">100</option>
+                                  <option value="250">250</option>
+                                  <option value="500">500</option>
+                                  <option value="-1">All</option>
+                                </select>
+                                entries</label
+                              >
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div id="StockList_filter" class="dataTables_filter">
+                              <label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="StockList" /></label>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="StockList_processing" class="dataTables_processing card" style="display: none">Processing...</div>
+                        <table
+                          class="table display table-bordered table-striped table-hover custom-table dataTable dtr-inline"
+                          width="100%"
+                          id="StockList"
+                          role="grid"
+                          aria-describedby="StockList_info"
+                          style="width: 100%"
+                        >
+                          <thead>
+                            <tr role="row">
+                              <th class="text-center sorting_disabled" rowspan="1" colspan="1" style="width: 33px" aria-label="Sl">Sl</th>
+                              <th
+                                class="text-center sorting_asc"
+                                tabindex="0"
+                                aria-controls="StockList"
+                                rowspan="1"
+                                colspan="1"
+                                style="width: 157px"
+                                aria-sort="ascending"
+                                aria-label="Medicine Name: activate to sort column descending"
+                              >
+                                <nobr>Medicine Name</nobr>
+                              </th>
+                              <th class="text-center sorting_disabled" rowspan="1" colspan="1" style="width: 193px" aria-label="Manufacturer Name">
+                                <nobr>Manufacturer Name</nobr>
+                              </th>
+                              <th class="text-center text-right sorting_disabled" rowspan="1" colspan="1" style="width: 104px" aria-label="Sale Price">
+                                <nobr>Sale Price</nobr>
+                              </th>
+                              <th class="text-center text-right sorting_disabled" rowspan="1" colspan="1" style="width: 146px" aria-label="Purchase Price">
+                                <nobr>Purchase Price</nobr>
+                              </th>
+                              <th class="text-center sorting_disabled" rowspan="1" colspan="1" style="width: 70px" aria-label="In Qty"><nobr>In Qty</nobr></th>
+                              <th class="text-center sorting_disabled" rowspan="1" colspan="1" style="width: 87px" aria-label="Out Qty">
+                                <nobr>Out Qty</nobr>
+                              </th>
+                              <th class="text-center stock sorting_disabled" rowspan="1" colspan="1" style="width: 89px" aria-label="Stock">
+                                <nobr>Stock</nobr>
+                              </th>
+                              <th class="text-center sorting_disabled" rowspan="1" colspan="1" style="width: 102px" aria-label="Stock box">
+                                <nobr>Stock box</nobr>
+                              </th>
+                              <th
+                                class="text-center total_sale text-right sorting_disabled"
+                                rowspan="1"
+                                colspan="1"
+                                style="width: 159px"
+                                aria-label="Stock Sale Price"
+                              >
+                                <nobr>Stock Sale Price</nobr>
+                              </th>
+                              <th
+                                class="text-center total_purchase text-right sorting_disabled"
+                                rowspan="1"
+                                colspan="1"
+                                style="width: 201px"
+                                aria-label="Stock Purchase Price"
+                              >
+                                <nobr>Stock Purchase Price</nobr>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr role="row" class="odd">
+                              <td tabindex="0">1</td>
+                              <td class="sorting_1">Almex( 400ml )</td>
+                              <td>Novo</td>
+                              <td class="text-right">$50.13</td>
+                              <td class="text-right">$33.47</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td class="stock">0</td>
+                              <td>0.00</td>
+                              <td class="total_sale text-right">$0.00</td>
+                              <td class="total_purchase text-right">$0.00</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td tabindex="0">2</td>
+                              <td class="sorting_1">Ambrox( 500ml )</td>
+                              <td>Nipro</td>
+                              <td class="text-right">$75.15</td>
+                              <td class="text-right">$50.15</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td class="stock">0</td>
+                              <td>0.00</td>
+                              <td class="total_sale text-right">$0.00</td>
+                              <td class="total_purchase text-right">$0.00</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td tabindex="0">3</td>
+                              <td class="sorting_1">Antiva (500ml)</td>
+                              <td>Beximco</td>
+                              <td class="text-right">$6.25</td>
+                              <td class="text-right">$5.00</td>
+                              <td>4000</td>
+                              <td>8</td>
+                              <td class="stock">3992</td>
+                              <td>99.80</td>
+                              <td class="total_sale text-right">$24,950.00</td>
+                              <td class="total_purchase text-right">$19,960.00</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td tabindex="0">4</td>
+                              <td class="sorting_1">Anzitor( 200ml )</td>
+                              <td>Aristropharma</td>
+                              <td class="text-right">$3.33</td>
+                              <td class="text-right">$3.00</td>
+                              <td>24000</td>
+                              <td>0</td>
+                              <td class="stock">24000</td>
+                              <td>160.00</td>
+                              <td class="total_sale text-right">$79,920.00</td>
+                              <td class="total_purchase text-right">$72,000.00</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td tabindex="0">5</td>
+                              <td class="sorting_1">Apsol(200)</td>
+                              <td>Healthcare</td>
+                              <td class="text-right">$23.33</td>
+                              <td class="text-right">$20.00</td>
+                              <td>4500</td>
+                              <td>45</td>
+                              <td class="stock">4455</td>
+                              <td>148.50</td>
+                              <td class="total_sale text-right">$103,935.15</td>
+                              <td class="total_purchase text-right">$89,100.00</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td tabindex="0">6</td>
+                              <td class="sorting_1">Bilista( 600ml )</td>
+                              <td>Gaco</td>
+                              <td class="text-right">$50.20</td>
+                              <td class="text-right">$34.00</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td class="stock">0</td>
+                              <td>0.00</td>
+                              <td class="total_sale text-right">$0.00</td>
+                              <td class="total_purchase text-right">$0.00</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td tabindex="0">7</td>
+                              <td class="sorting_1">Boris(425)</td>
+                              <td>Beximco</td>
+                              <td class="text-right">$3.00</td>
+                              <td class="text-right">$2.24</td>
+                              <td>4000</td>
+                              <td>3</td>
+                              <td class="stock">3997</td>
+                              <td>99.92</td>
+                              <td class="total_sale text-right">$11,991.00</td>
+                              <td class="total_purchase text-right">$8,953.28</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td tabindex="0">8</td>
+                              <td class="sorting_1">Calbo( 100ml )</td>
+                              <td>Eskayef</td>
+                              <td class="text-right">$50.23</td>
+                              <td class="text-right">$34.00</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td class="stock">0</td>
+                              <td>0.00</td>
+                              <td class="total_sale text-right">$0.00</td>
+                              <td class="total_purchase text-right">$0.00</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td tabindex="0">9</td>
+                              <td class="sorting_1">Carva ( 400ml )</td>
+                              <td>Opsonin</td>
+                              <td class="text-right">$15.00</td>
+                              <td class="text-right">$10.00</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td class="stock">0</td>
+                              <td>0.00</td>
+                              <td class="total_sale text-right">$0.00</td>
+                              <td class="total_purchase text-right">$0.00</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td tabindex="0">10</td>
+                              <td class="sorting_1">Carva ( 400ml )</td>
+                              <td>incepta</td>
+                              <td class="text-right">$75.10</td>
+                              <td class="text-right">$50.10</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td class="stock">0</td>
+                              <td>0.00</td>
+                              <td class="total_sale text-right">$0.00</td>
+                              <td class="total_purchase text-right">$0.00</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td tabindex="0">11</td>
+                              <td class="sorting_1">Entacyd( 20ml )</td>
+                              <td>Novartis</td>
+                              <td class="text-right">$50.00</td>
+                              <td class="text-right">$33.33</td>
+                              <td>3000</td>
+                              <td>17</td>
+                              <td class="stock">2983</td>
+                              <td>99.43</td>
+                              <td class="total_sale text-right">$149,150.00</td>
+                              <td class="total_purchase text-right">$99,423.39</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td tabindex="0">12</td>
+                              <td class="sorting_1">Esloric(100)</td>
+                              <td>Square</td>
+                              <td class="text-right">$13.33</td>
+                              <td class="text-right">$10.00</td>
+                              <td>2400</td>
+                              <td>15</td>
+                              <td class="stock">2385</td>
+                              <td>79.50</td>
+                              <td class="total_sale text-right">$31,792.05</td>
+                              <td class="total_purchase text-right">$23,850.00</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td tabindex="0">13</td>
+                              <td class="sorting_1">Flexo(400)</td>
+                              <td>Reneta</td>
+                              <td class="text-right">$20.00</td>
+                              <td class="text-right">$17.00</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td class="stock">0</td>
+                              <td>0.00</td>
+                              <td class="total_sale text-right">$0.00</td>
+                              <td class="total_purchase text-right">$0.00</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td tabindex="0">14</td>
+                              <td class="sorting_1">Fona(100)</td>
+                              <td>Square</td>
+                              <td class="text-right">$4.00</td>
+                              <td class="text-right">$3.33</td>
+                              <td>22501</td>
+                              <td>21</td>
+                              <td class="stock">22480</td>
+                              <td>149.87</td>
+                              <td class="total_sale text-right">$89,920.00</td>
+                              <td class="total_purchase text-right">$74,858.40</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td tabindex="0">15</td>
+                              <td class="sorting_1">Fona plus ( 300ml )</td>
+                              <td>Cosmic</td>
+                              <td class="text-right">$5.33</td>
+                              <td class="text-right">$5.00</td>
+                              <td>13502</td>
+                              <td>17</td>
+                              <td class="stock">13485</td>
+                              <td>89.90</td>
+                              <td class="total_sale text-right">$71,875.05</td>
+                              <td class="total_purchase text-right">$67,425.00</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td tabindex="0">16</td>
+                              <td class="sorting_1">Geldrin(20)</td>
+                              <td>Healthcare</td>
+                              <td class="text-right">$10.00</td>
+                              <td class="text-right">$7.00</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td class="stock">0</td>
+                              <td>0.00</td>
+                              <td class="total_sale text-right">$0.00</td>
+                              <td class="total_purchase text-right">$0.00</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td tabindex="0">17</td>
+                              <td class="sorting_1">Golos(10)</td>
+                              <td>Healthcare</td>
+                              <td class="text-right">$15.00</td>
+                              <td class="text-right">$13.00</td>
+                              <td>6000</td>
+                              <td>6</td>
+                              <td class="stock">5994</td>
+                              <td>149.85</td>
+                              <td class="total_sale text-right">$89,910.00</td>
+                              <td class="total_purchase text-right">$77,922.00</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td tabindex="0">18</td>
+                              <td class="sorting_1">Lumertam( 600ml )</td>
+                              <td>Radiant</td>
+                              <td class="text-right">$75.05</td>
+                              <td class="text-right">$50.05</td>
+                              <td>2000</td>
+                              <td>10</td>
+                              <td class="stock">1990</td>
+                              <td>99.50</td>
+                              <td class="total_sale text-right">$149,349.50</td>
+                              <td class="total_purchase text-right">$99,599.50</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td tabindex="0">19</td>
+                              <td class="sorting_1">Napa(500)</td>
+                              <td>Square</td>
+                              <td class="text-right">$3.33</td>
+                              <td class="text-right">$3.00</td>
+                              <td>13500</td>
+                              <td>7</td>
+                              <td class="stock">13493</td>
+                              <td>89.95</td>
+                              <td class="total_sale text-right">$44,931.69</td>
+                              <td class="total_purchase text-right">$40,479.00</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td tabindex="0">20</td>
+                              <td class="sorting_1">Normens(300)</td>
+                              <td>Healthcare</td>
+                              <td class="text-right">$20.00</td>
+                              <td class="text-right">$17.00</td>
+                              <td>2700</td>
+                              <td>0</td>
+                              <td class="stock">2700</td>
+                              <td>90.00</td>
+                              <td class="total_sale text-right">$54,000.00</td>
+                              <td class="total_purchase text-right">$45,900.00</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td tabindex="0">21</td>
+                              <td class="sorting_1">Rex( 500ml )</td>
+                              <td>Jayson</td>
+                              <td class="text-right">$50.17</td>
+                              <td class="text-right">$34.00</td>
+                              <td>0</td>
+                              <td>0</td>
+                              <td class="stock">0</td>
+                              <td>0.00</td>
+                              <td class="total_sale text-right">$0.00</td>
+                              <td class="total_purchase text-right">$0.00</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td tabindex="0">22</td>
+                              <td class="sorting_1">Robic(300)</td>
+                              <td>Square</td>
+                              <td class="text-right">$40.00</td>
+                              <td class="text-right">$45.00</td>
+                              <td>1400</td>
+                              <td>16</td>
+                              <td class="stock">1384</td>
+                              <td>69.20</td>
+                              <td class="total_sale text-right">$55,360.00</td>
+                              <td class="total_purchase text-right">$62,280.00</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td tabindex="0">23</td>
+                              <td class="sorting_1">Rupa (50)</td>
+                              <td>Opsonin</td>
+                              <td class="text-right">$4.00</td>
+                              <td class="text-right">$4.00</td>
+                              <td>15000</td>
+                              <td>4</td>
+                              <td class="stock">14996</td>
+                              <td>99.97</td>
+                              <td class="total_sale text-right">$59,984.00</td>
+                              <td class="total_purchase text-right">$59,984.00</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td tabindex="0">24</td>
+                              <td class="sorting_1">Virux(100)</td>
+                              <td>Beximco</td>
+                              <td class="text-right">$25.00</td>
+                              <td class="text-right">$23.00</td>
+                              <td>800</td>
+                              <td>9</td>
+                              <td class="stock">791</td>
+                              <td>39.55</td>
+                              <td class="total_sale text-right">$19,775.00</td>
+                              <td class="total_purchase text-right">$18,193.00</td>
+                            </tr>
+                            <tr role="row" class="odd">
+                              <td tabindex="0">25</td>
+                              <td class="sorting_1">Zanthin( 100ml )</td>
+                              <td>Square</td>
+                              <td class="text-right">$15.00</td>
+                              <td class="text-right">$13.00</td>
+                              <td>2400</td>
+                              <td>11</td>
+                              <td class="stock">2389</td>
+                              <td>59.73</td>
+                              <td class="total_sale text-right">$35,835.00</td>
+                              <td class="total_purchase text-right">$31,057.00</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <th colspan="7" class="text-right" rowspan="1">Total:</th>
+                              <th id="stockqty" class="stock" rowspan="1" colspan="1">121,514</th>
+                              <th rowspan="1" colspan="1"></th>
+                              <th class="total_sale text-right" rowspan="1" colspan="1">$ 1,072,678.44</th>
+                              <th class="total_purchase text-right" rowspan="1" colspan="1">$ 890,984.57</th>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <div class="bottom">
+                          <div class="dataTables_info" id="StockList_info" role="status" aria-live="polite">Showing 1 to 25 of 26 entries</div>
+                          <div class="dataTables_paginate paging_simple_numbers" id="StockList_paginate">
+                            <ul class="pagination">
+                              <li class="paginate_button page-item previous disabled" id="StockList_previous">
+                                <a href="#" aria-controls="StockList" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                              </li>
+                              <li class="paginate_button page-item active">
+                                <a href="#" aria-controls="StockList" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                              </li>
+                              <li class="paginate_button page-item">
+                                <a href="#" aria-controls="StockList" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+                              </li>
+                              <li class="paginate_button page-item next" id="StockList_next">
+                                <a href="#" aria-controls="StockList" data-dt-idx="3" tabindex="0" class="page-link">Next</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->
+      <footer class="main-footer">
+        <div class="float-right d-none d-sm-block"><b>Version</b> 3.2.0</div>
+        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+      </footer>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+      </aside>
+      <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+      $.widget.bridge("uibutton", $.ui.button);
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard.js"></script>
+    <!-- Page specific script -->
+    <script>
+      $(function () {
+        bsCustomFileInput.init();
+      });
+    </script>
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="../../plugins/jszip/jszip.min.js"></script>
+    <script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
+    <!-- Page specific script -->
+    <script>
+      $(function () {
+        $("#example1")
+          .DataTable({
+            responsive: true,
+            lengthChange: false,
+            autoWidth: false,
+            buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"],
+          })
+          .buttons()
+          .container()
+          .appendTo("#example1_wrapper .col-md-6:eq(0)");
+        $("#example2").DataTable({
+          paging: true,
+          lengthChange: false,
+          searching: false,
+          ordering: true,
+          info: true,
+          autoWidth: false,
+          responsive: true,
+        });
+      });
+    </script>
+  </body>
+</html>
