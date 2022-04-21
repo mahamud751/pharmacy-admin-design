@@ -3,28 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AdminLTE 3 | General Form Elements</title>
+    <title>AdminLTE 3 | Advanced form elements</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css" />
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css" />
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" />
     <!-- Tempusdominus Bootstrap 4 -->
     <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css" />
-    <!-- iCheck -->
-    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css" />
-    <!-- JQVMap -->
-    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css" />
+    <!-- Select2 -->
+    <link rel="stylesheet" href="plugins/select2/css/select2.min.css" />
+    <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css" />
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css" />
+    <!-- BS Stepper -->
+    <link rel="stylesheet" href="plugins/bs-stepper/css/bs-stepper.min.css" />
+    <!-- dropzonejs -->
+    <link rel="stylesheet" href="plugins/dropzone/min/dropzone.min.css" />
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/adminlte.min.css" />
-    <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css" />
-    <!-- Daterange picker -->
-    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css" />
-    <!-- summernote -->
-    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css" />
   </head>
   <body class="hold-transition sidebar-mini">
     <div class="wrapper">
@@ -36,7 +39,7 @@
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
-            <a href="index3.html" class="nav-link">Home</a>
+            <a href="../../index3.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
             <a href="#" class="nav-link">Contact</a>
@@ -77,12 +80,12 @@
               <a href="#" class="dropdown-item">
                 <!-- Message Start -->
                 <div class="media">
-                  <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle" />
+                  <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle" />
                   <div class="media-body">
-                    <h3 class="dropdown-item-title">
+                    <h5 class="dropdown-item-title">
                       Brad Diesel
                       <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                    </h3>
+                    </h5>
                     <p class="text-sm">Call me whenever you can...</p>
                     <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
                   </div>
@@ -93,12 +96,12 @@
               <a href="#" class="dropdown-item">
                 <!-- Message Start -->
                 <div class="media">
-                  <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
+                  <img src="../../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
                   <div class="media-body">
-                    <h3 class="dropdown-item-title">
+                    <h5 class="dropdown-item-title">
                       John Pierce
                       <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                    </h3>
+                    </h5>
                     <p class="text-sm">I got your message bro</p>
                     <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
                   </div>
@@ -109,12 +112,12 @@
               <a href="#" class="dropdown-item">
                 <!-- Message Start -->
                 <div class="media">
-                  <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
+                  <img src="../../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
                   <div class="media-body">
-                    <h3 class="dropdown-item-title">
+                    <h5 class="dropdown-item-title">
                       Nora Silvester
                       <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                    </h3>
+                    </h5>
                     <p class="text-sm">The subject goes here</p>
                     <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
                   </div>
@@ -158,7 +161,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
               <i class="fas fa-th-large"></i>
             </a>
           </li>
@@ -857,13 +860,11 @@
         <section class="content-header">
           <div class="container-fluid">
             <div class="row mb-2">
-              <div class="col-sm-6">
-                <h1>General Form</h1>
-              </div>
+              <div class="col-sm-6"></div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active">General Form</li>
+                  <li class="breadcrumb-item active">Advanced Form</li>
                 </ol>
               </div>
             </div>
@@ -874,138 +875,102 @@
         <!-- Main content -->
         <section class="content">
           <div class="container-fluid">
+            <!-- SELECT2 EXAMPLE -->
             <div class="row">
-              <div class="col-md-12 col-lg-12">
-                <div class="card">
-                  <div class="card-header py-2">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div>
-                        <h6 class="fs-17 font-weight-600 mb-0">Add Bank</h6>
+                <div class="col-md-12 col-lg-12">
+                   <div class="card">
+           <div class="card-header py-2">
+               <div class="d-flex justify-content-between align-items-center">
+                   <div>
+                       <h6 class="fs-17 font-weight-600 mb-0">General Ledger</h6>
+                   </div>
+   
+               </div>
+           </div>
+                    <div class="card-body">
+                             <form action="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/bank_book" name="form1" id="form1" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+          <input type="hidden" name="app_csrf" value="11d6443db7e9a878f8a83e5b2f044d6c">   
+                <div class="form-group row">
+                    <label for="account_head" class="col-sm-2 col-form-label">General Head</label>
+                               <div class="col-sm-4">
+                                <select class="form-control select2" style="width: 100%">
+                                    <option selected="selected">General Head</option>
+                                    <option>Alaska</option>
+                                    <option>California</option>
+                                    <option>Delaware</option>
+                                    <option>Tennessee</option>
+                                    <option>Texas</option>
+                                    <option>Washington</option>
+                                  </select>
                       </div>
-                      <div class="text-right">
-                        <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/bank/bank_list" class="btn btn-success btn-sm mr-1"
-                          ><i class="fas fa-align-justify mr-1"></i>Bank List</a
-                        >
-                      </div>
+                      <div class="col-sm-6 text-right">
+                        <button type="button" class="btn btn-warning" onclick="printDiv('printArea')">Print</button>
                     </div>
-                  </div>
-                  <div class="card-body">
-                    <form
-                      action="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/bank/add_bank/"
-                      enctype="multipart/form-data"
-                      method="post"
-                      accept-charset="utf-8"
-                    >
-                      <input type="hidden" name="app_csrf" value="f614bfe49c90fb887028b455a9f0f1c3" />
+                </div>      
+                <div class="form-group row">
+                    <label for="account_head" class="col-sm-2 col-form-label">Transaction Head</label>
+                               <div class="col-sm-4">
+                                <select class="form-control select2" style="width: 100%">
+                                    <option selected="selected">Transaction Head</option>
+                                    <option>Alaska</option>
+                                    <option>California</option>
+                                    <option>Delaware</option>
+                                    <option>Tennessee</option>
+                                    <option>Texas</option>
+                                    <option>Washington</option>
+                                  </select>
+                      </div>
+                      <div class="col-sm-6 text-right">
+                        <button type="button" class="btn btn-warning" onclick="printDiv('printArea')">Print</button>
+                    </div>
+                </div>      
+                       
+                     
+                        <div class="form-group row">
+                           <label for="from_date" class="col-sm-2 col-form-label">From Date</label>
+                           <div class="col-sm-4">
+                              <input type="text" name="from_date" value="2022-04-21" placeholder="Date" class="datepicker form-control" required="">
+                           </div>
+                       </div> 
+                        <div class="form-group row">
+                           <label for="to_date" class="col-sm-2 col-form-label">To Date</label>
+                           <div class="col-sm-4">
+                               <input type="text" name="to_date" value="2022-04-21" placeholder="Date" class="datepicker form-control" required="">
+                           </div>
+                       </div> 
+                       <div class="form-group row">
+                         <lable class="col-sm-2"></lable>
+                           <div class="col-sm-4">
+                               <button type="submit" id="btn-filter-pur" class="btn btn-success mb-2 mt-0 form-control">Search</button>
+                           </div>
+                       </div> 
+   
+                                              
+                  </form>   
+                       
+                       </div>
+                  
 
-                      <input type="hidden" name="bank_id" id="bank_id" value="" />
-                      <div class="form-group row">
-                        <label for="bank_name" class="col-md-2 text-right col-form-label">Bank Name <i class="text-danger"> * </i>:</label>
-                        <div class="col-md-4">
-                          <div class="">
-                            <input type="text" name="bank_name" class="form-control" id="bank_name" placeholder="Bank Name" value="" />
-                            <input type="hidden" name="old_name" value="" />
-                          </div>
-                        </div>
-                        <label for="ac_name" class="col-md-2 text-right col-form-label">Account Name <i class="text-danger"> * </i>:</label>
-                        <div class="col-md-4">
-                          <div class="">
-                            <input
-                              type="text"
-                              name="ac_name"
-                              class="form-control input-mask-trigger text-left"
-                              id="ac_name"
-                              placeholder="Account Name"
-                              value=""
-                              data-inputmask="'alias': 'decimal', 'groupSeparator': '', 'autoGroup': true"
-                              im-insert="true"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="ac_number" class="col-md-2 text-right col-form-label">Account Number <i class="text-danger"> * </i>:</label>
-                        <div class="col-md-4">
-                          <div class="">
-                            <input
-                              type="text"
-                              class="form-control input-mask-trigger valid_number"
-                              name="ac_number"
-                              id="ac_number"
-                              data-inputmask="'alias': 'email'"
-                              im-insert="true"
-                              placeholder="Account Number"
-                              value=""
-                            />
-                          </div>
-                        </div>
-                        <label for="branch" class="col-md-2 text-right col-form-label">Branch:</label>
-                        <div class="col-md-4">
-                          <div class="">
-                            <input type="text" class="form-control" name="branch" id="branch" placeholder="Branch" value="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="signature_pic" class="col-md-2 text-right col-form-label">Signature Picture:</label>
-                        <div class="col-md-4">
-                          <div class="">
-                            <input
-                              class="form-control input-mask-trigger text-left"
-                              id="signature_pic"
-                              type="file"
-                              name="image"
-                              placeholder="Signature Picture"
-                              data-inputmask="'alias': 'decimal', 'groupSeparator': '', 'autoGroup': true"
-                              im-insert="true"
-                            />
-                            <input type="hidden" name="old_image" value="" />
-                          </div>
-                        </div>
-
-                        <label for="status" class="col-md-2 text-right col-form-label">Status <i class="text-danger"> * </i>:</label>
-                        <div class="col-md-4">
-                          <div class="">
-                            <label class="radio-inline my-2">
-                              <input type="radio" name="status" value="1" checked="checked" id="status" />
-                              Active
-                            </label>
-                            <label class="radio-inline my-2">
-                              <input type="radio" name="status" value="0" id="status" />
-                              Inactive
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="preview" class="col-md-2 text-right col-form-label">Preview:</label>
-                        <div class="col-md-4">
-                          <div class="">
-                            <img
-                              id="blah"
-                              class="img-thambnail"
-                              src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/dist/img/bank/bank.jpg"
-                              alt="your image"
-                              height="70px"
-                              width="70px;"
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="form-group row">
-                        <div class="col-md-6 text-right"></div>
-                        <div class="col-md-6 text-right">
-                          <div class="">
-                            <button type="submit" class="btn btn-success">Save</button>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
+                       </div>
+                       </div>
+              
+   
+                       </div>
+              <!-- /.card-body -->
+            
             </div>
+            <!-- /.card -->
+
+            <!-- SELECT2 EXAMPLE -->
+
+            <!-- /.card -->
+
+            <!-- /.card -->
+
+            <!-- /.row -->
+
+            <!-- /.row -->
+
             <!-- /.row -->
           </div>
           <!-- /.container-fluid -->
@@ -1028,43 +993,167 @@
 
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
-    <!-- jQuery UI 1.11.4 -->
-    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-    <script>
-      $.widget.bridge("uibutton", $.ui.button);
-    </script>
     <!-- Bootstrap 4 -->
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- ChartJS -->
-    <script src="plugins/chart.js/Chart.min.js"></script>
-    <!-- Sparkline -->
-    <script src="plugins/sparklines/sparkline.js"></script>
-    <!-- JQVMap -->
-    <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
-    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-    <!-- jQuery Knob Chart -->
-    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
-    <!-- daterangepicker -->
+    <!-- Select2 -->
+    <script src="plugins/select2/js/select2.full.min.js"></script>
+    <!-- Bootstrap4 Duallistbox -->
+    <script src="plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+    <!-- InputMask -->
     <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/inputmask/jquery.inputmask.min.js"></script>
+    <!-- date-range-picker -->
     <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap color picker -->
+    <script src="plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
     <!-- Tempusdominus Bootstrap 4 -->
     <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-    <!-- Summernote -->
-    <script src="plugins/summernote/summernote-bs4.min.js"></script>
-    <!-- overlayScrollbars -->
-    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- Bootstrap Switch -->
+    <script src="plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <!-- BS-Stepper -->
+    <script src="plugins/bs-stepper/js/bs-stepper.min.js"></script>
+    <!-- dropzonejs -->
+    <script src="plugins/dropzone/min/dropzone.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="dist/js/adminlte.js"></script>
+    <script src="dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="dist/js/pages/dashboard.js"></script>
     <!-- Page specific script -->
     <script>
       $(function () {
-        bsCustomFileInput.init();
+        //Initialize Select2 Elements
+        $(".select2").select2();
+
+        //Initialize Select2 Elements
+        $(".select2bs4").select2({
+          theme: "bootstrap4",
+        });
+
+        //Datemask dd/mm/yyyy
+        $("#datemask").inputmask("dd/mm/yyyy", { placeholder: "dd/mm/yyyy" });
+        //Datemask2 mm/dd/yyyy
+        $("#datemask2").inputmask("mm/dd/yyyy", { placeholder: "mm/dd/yyyy" });
+        //Money Euro
+        $("[data-mask]").inputmask();
+
+        //Date picker
+        $("#reservationdate").datetimepicker({
+          format: "L",
+        });
+
+        //Date and time picker
+        $("#reservationdatetime").datetimepicker({ icons: { time: "far fa-clock" } });
+
+        //Date range picker
+        $("#reservation").daterangepicker();
+        //Date range picker with time picker
+        $("#reservationtime").daterangepicker({
+          timePicker: true,
+          timePickerIncrement: 30,
+          locale: {
+            format: "MM/DD/YYYY hh:mm A",
+          },
+        });
+        //Date range as a button
+        $("#daterange-btn").daterangepicker(
+          {
+            ranges: {
+              Today: [moment(), moment()],
+              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+              "Last 7 Days": [moment().subtract(6, "days"), moment()],
+              "Last 30 Days": [moment().subtract(29, "days"), moment()],
+              "This Month": [moment().startOf("month"), moment().endOf("month")],
+              "Last Month": [moment().subtract(1, "month").startOf("month"), moment().subtract(1, "month").endOf("month")],
+            },
+            startDate: moment().subtract(29, "days"),
+            endDate: moment(),
+          },
+          function (start, end) {
+            $("#reportrange span").html(start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY"));
+          }
+        );
+
+        //Timepicker
+        $("#timepicker").datetimepicker({
+          format: "LT",
+        });
+
+        //Bootstrap Duallistbox
+        $(".duallistbox").bootstrapDualListbox();
+
+        //Colorpicker
+        $(".my-colorpicker1").colorpicker();
+        //color picker with addon
+        $(".my-colorpicker2").colorpicker();
+
+        $(".my-colorpicker2").on("colorpickerChange", function (event) {
+          $(".my-colorpicker2 .fa-square").css("color", event.color.toString());
+        });
+
+        $("input[data-bootstrap-switch]").each(function () {
+          $(this).bootstrapSwitch("state", $(this).prop("checked"));
+        });
       });
+      // BS-Stepper Init
+      document.addEventListener("DOMContentLoaded", function () {
+        window.stepper = new Stepper(document.querySelector(".bs-stepper"));
+      });
+
+      // DropzoneJS Demo Code Start
+      Dropzone.autoDiscover = false;
+
+      // Get the template HTML and remove it from the doumenthe template HTML and remove it from the doument
+      var previewNode = document.querySelector("#template");
+      previewNode.id = "";
+      var previewTemplate = previewNode.parentNode.innerHTML;
+      previewNode.parentNode.removeChild(previewNode);
+
+      var myDropzone = new Dropzone(document.body, {
+        // Make the whole body a dropzone
+        url: "/target-url", // Set the url
+        thumbnailWidth: 80,
+        thumbnailHeight: 80,
+        parallelUploads: 20,
+        previewTemplate: previewTemplate,
+        autoQueue: false, // Make sure the files aren't queued until manually added
+        previewsContainer: "#previews", // Define the container to display the previews
+        clickable: ".fileinput-button", // Define the element that should be used as click trigger to select files.
+      });
+
+      myDropzone.on("addedfile", function (file) {
+        // Hookup the start button
+        file.previewElement.querySelector(".start").onclick = function () {
+          myDropzone.enqueueFile(file);
+        };
+      });
+
+      // Update the total progress bar
+      myDropzone.on("totaluploadprogress", function (progress) {
+        document.querySelector("#total-progress .progress-bar").style.width = progress + "%";
+      });
+
+      myDropzone.on("sending", function (file) {
+        // Show the total progress bar when upload starts
+        document.querySelector("#total-progress").style.opacity = "1";
+        // And disable the start button
+        file.previewElement.querySelector(".start").setAttribute("disabled", "disabled");
+      });
+
+      // Hide the total progress bar when nothing's uploading anymore
+      myDropzone.on("queuecomplete", function (progress) {
+        document.querySelector("#total-progress").style.opacity = "0";
+      });
+
+      // Setup the buttons for all transfers
+      // The "add files" button doesn't need to be setup because the config
+      // `clickable` has already been specified.
+      document.querySelector("#actions .start").onclick = function () {
+        myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
+      };
+      document.querySelector("#actions .cancel").onclick = function () {
+        myDropzone.removeAllFiles(true);
+      };
+      // DropzoneJS Demo Code End
     </script>
   </body>
 </html>

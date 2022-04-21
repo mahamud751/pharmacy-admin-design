@@ -880,125 +880,170 @@
                   <div class="card-header py-2">
                     <div class="d-flex justify-content-between align-items-center">
                       <div>
-                        <h6 class="fs-17 font-weight-600 mb-0">Add Bank</h6>
+                        <h6 class="fs-17 font-weight-600 mb-0">Cash Adjustment/h6>
                       </div>
-                      <div class="text-right">
-                        <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/bank/bank_list" class="btn btn-success btn-sm mr-1"
-                          ><i class="fas fa-align-justify mr-1"></i>Bank List</a
-                        >
-                      </div>
+                      <div class="text-right"></div>
                     </div>
                   </div>
                   <div class="card-body">
                     <form
-                      action="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/bank/add_bank/"
+                      action="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/save_customer_receive"
+                      id="customer_receive"
                       enctype="multipart/form-data"
                       method="post"
                       accept-charset="utf-8"
+                      data-select2-id="select2-data-customer_receive"
                     >
                       <input type="hidden" name="app_csrf" value="f614bfe49c90fb887028b455a9f0f1c3" />
+                      <div class="form-group row">
+                        <label for="vo_no" class="col-sm-2 col-form-label">Voucher No</label>
+                        <div class="col-sm-4">
+                          <input type="text" name="txtVNo" id="txtVNo" value="CR-1" class="form-control" readonly="" />
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="date" class="col-sm-2 col-form-label">Date<i class="text-danger">*</i></label>
+                        <div class="col-sm-4">
+                          <input type="text" name="dtpDate" id="dtpDate" class="form-control datepicker" value="2022-04-20" required="" />
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="customer" class="col-sm-2 col-form-label">Customer <i class="text-danger">*</i></label>
+                        <div class="col-sm-4">
+                          <select
+                            name="customer_id"
+                            id="customer_id"
+                            class="form-control select2 select2-hidden-accessible"
+                            onchange="load_customer_code(this.value)"
+                            required=""
+                            data-select2-id="select2-data-customer_id"
+                            tabindex="-1"
+                            aria-hidden="true"
+                          >
+                            &lt;
+                            <option value="" data-select2-id="select2-data-2-xgqc">Select Customer</option>
+                            } option
+                            <option value="1" data-select2-id="select2-data-10-jq54">Abrar</option>
+                            <option value="5" data-select2-id="select2-data-11-z0p6">Akber Ahmed</option>
+                            <option value="12" data-select2-id="select2-data-12-9byr">APU Sardar</option>
+                            <option value="10" data-select2-id="select2-data-13-qeb6">Ayman</option>
+                            <option value="6" data-select2-id="select2-data-14-57hu">Babul</option>
+                            <option value="11" data-select2-id="select2-data-15-3xdb">Jack</option>
+                            <option value="4" data-select2-id="select2-data-16-7nrw">Md sabuj Ahmed</option>
+                            <option value="8" data-select2-id="select2-data-17-op8b">Mohammad</option>
+                            <option value="13" data-select2-id="select2-data-18-d7on">Nadim</option>
+                            <option value="2" data-select2-id="select2-data-19-7513">Rabbi</option>
+                            <option value="3" data-select2-id="select2-data-20-2513">Urmi paul</option>
+                            <option value="9" data-select2-id="select2-data-21-0xh6">Walking Customer</option>
+                          </select>
 
-                      <input type="hidden" name="bank_id" id="bank_id" value="" />
-                      <div class="form-group row">
-                        <label for="bank_name" class="col-md-2 text-right col-form-label">Bank Name <i class="text-danger"> * </i>:</label>
-                        <div class="col-md-4">
-                          <div class="">
-                            <input type="text" name="bank_name" class="form-control" id="bank_name" placeholder="Bank Name" value="" />
-                            <input type="hidden" name="old_name" value="" />
-                          </div>
-                        </div>
-                        <label for="ac_name" class="col-md-2 text-right col-form-label">Account Name <i class="text-danger"> * </i>:</label>
-                        <div class="col-md-4">
-                          <div class="">
-                            <input
-                              type="text"
-                              name="ac_name"
-                              class="form-control input-mask-trigger text-left"
-                              id="ac_name"
-                              placeholder="Account Name"
-                              value=""
-                              data-inputmask="'alias': 'decimal', 'groupSeparator': '', 'autoGroup': true"
-                              im-insert="true"
-                            />
-                          </div>
+                          <input type="hidden" name="txtCode" value="" class="form-control" id="txtCode" />
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="ac_number" class="col-md-2 text-right col-form-label">Account Number <i class="text-danger"> * </i>:</label>
-                        <div class="col-md-4">
-                          <div class="">
-                            <input
-                              type="text"
-                              class="form-control input-mask-trigger valid_number"
-                              name="ac_number"
-                              id="ac_number"
-                              data-inputmask="'alias': 'email'"
-                              im-insert="true"
-                              placeholder="Account Number"
-                              value=""
-                            />
-                          </div>
-                        </div>
-                        <label for="branch" class="col-md-2 text-right col-form-label">Branch:</label>
-                        <div class="col-md-4">
-                          <div class="">
-                            <input type="text" class="form-control" name="branch" id="branch" placeholder="Branch" value="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="signature_pic" class="col-md-2 text-right col-form-label">Signature Picture:</label>
-                        <div class="col-md-4">
-                          <div class="">
-                            <input
-                              class="form-control input-mask-trigger text-left"
-                              id="signature_pic"
-                              type="file"
-                              name="image"
-                              placeholder="Signature Picture"
-                              data-inputmask="'alias': 'decimal', 'groupSeparator': '', 'autoGroup': true"
-                              im-insert="true"
-                            />
-                            <input type="hidden" name="old_image" value="" />
-                          </div>
-                        </div>
-
-                        <label for="status" class="col-md-2 text-right col-form-label">Status <i class="text-danger"> * </i>:</label>
-                        <div class="col-md-4">
-                          <div class="">
-                            <label class="radio-inline my-2">
-                              <input type="radio" name="status" value="1" checked="checked" id="status" />
-                              Active
-                            </label>
-                            <label class="radio-inline my-2">
-                              <input type="radio" name="status" value="0" id="status" />
-                              Inactive
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="preview" class="col-md-2 text-right col-form-label">Preview:</label>
-                        <div class="col-md-4">
-                          <div class="">
-                            <img
-                              id="blah"
-                              class="img-thambnail"
-                              src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/dist/img/bank/bank.jpg"
-                              alt="your image"
-                              height="70px"
-                              width="70px;"
-                            />
-                          </div>
+                        <label for="amount" class="col-sm-2 col-form-label">Amount <i class="text-danger">*</i></label>
+                        <div class="col-sm-4">
+                          <input type="text" name="txtAmount" value="" class="form-control total_price text-right valid_number" id="txtAmount_1" required="" />
                         </div>
                       </div>
 
                       <div class="form-group row">
-                        <div class="col-md-6 text-right"></div>
-                        <div class="col-md-6 text-right">
-                          <div class="">
-                            <button type="submit" class="btn btn-success">Save</button>
+                        <label for="payment_type" class="col-sm-2 col-form-label">Payment Type <i class="text-danger">*</i></label>
+                        <div class="col-sm-4">
+                          <select
+                            name="paytype"
+                            class="form-control select2 select2-hidden-accessible"
+                            required=""
+                            onchange="bank_payment(this.value)"
+                            tabindex="-1"
+                            data-select2-id="select2-data-3-g6yf"
+                            aria-hidden="true"
+                          >
+                            <option value="1" data-select2-id="select2-data-5-m4aj">Cash Payment</option>
+                            <option value="2" data-select2-id="select2-data-24-5jk6">Bank Payment</option></select
+                          ><span
+                            class="select2 select2-container select2-container--default select2-container--below"
+                            dir="ltr"
+                            data-select2-id="select2-data-4-38j7"
+                            style="width: 570.984px"
+                            ><span class="selection"
+                              ><span
+                                class="select2-selection select2-selection--single"
+                                role="combobox"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                tabindex="3"
+                                aria-disabled="false"
+                                aria-labelledby="select2-paytype-gq-container"
+                                ><span
+                                  class="select2-selection__rendered"
+                                  id="select2-paytype-gq-container"
+                                  role="textbox"
+                                  aria-readonly="true"
+                                  title="Cash Payment"
+                                  >Cash Payment</span
+                                ><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span
+                            ><span class="dropdown-wrapper" aria-hidden="true"></span
+                          ></span>
+                        </div>
+                      </div>
+
+                      <div class="bank_div" style="display: none">
+                        <div class="form-group row">
+                          <label for="bank" class="col-sm-2 col-form-label">Bank <i class="text-danger">*</i></label>
+                          <div class="col-sm-4">
+                            <select
+                              name="bank_id"
+                              class="form-control select2 select2-hidden-accessible"
+                              id="bank_id"
+                              data-select2-id="select2-data-bank_id"
+                              tabindex="-1"
+                              aria-hidden="true"
+                            >
+                              <option value="" selected="selected" data-select2-id="select2-data-7-t7jc">Select Bank</option>
+                              <option value="1">City Bank</option>
+                              <option value="2">UCB</option>
+                              <option value="3">DBBL</option>
+                              <option value="4">Prime Asia</option></select
+                            ><span
+                              class="select2 select2-container select2-container--default"
+                              dir="ltr"
+                              data-select2-id="select2-data-6-afya"
+                              style="width: 570.984px"
+                              ><span class="selection"
+                                ><span
+                                  class="select2-selection select2-selection--single"
+                                  role="combobox"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                  tabindex="0"
+                                  aria-disabled="false"
+                                  aria-labelledby="select2-bank_id-container"
+                                  ><span
+                                    class="select2-selection__rendered"
+                                    id="select2-bank_id-container"
+                                    role="textbox"
+                                    aria-readonly="true"
+                                    title="Select Bank"
+                                    >Select Bank</span
+                                  ><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span
+                              ><span class="dropdown-wrapper" aria-hidden="true"></span
+                            ></span>
                           </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                        <label for="txtRemarks" class="col-sm-2 col-form-label">Remarks</label>
+                        <div class="col-sm-4">
+                          <textarea name="txtRemarks" id="txtRemarks" class="form-control"></textarea>
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-4">
+                          <input type="submit" id="add_receive" class="btn btn-success btn-large form-control" name="save" value="Save" tabindex="9" />
                         </div>
                       </div>
                     </form>
