@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AdminLTE 3 | DataTables</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css" />
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css" />
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css" />
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css" />
+    <!-- summernote -->
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css" />
+  </head>
+  <body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="index3.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+          <!-- Navbar Search -->
+          <li class="nav-item">
+            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+              <i class="fas fa-search"></i>
+            </a>
+            <div class="navbar-search-block">
+              <form class="form-inline">
+                <div class="input-group input-group-sm">
+                  <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search" />
+                  <div class="input-group-append">
+                    <button class="btn btn-navbar" type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+
+          <!-- Messages Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="far fa-comments"></i>
+              <span class="badge badge-danger navbar-badge">3</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle" />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      Brad Diesel
+                      <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">Call me whenever you can...</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      John Pierce
+                      <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">I got your message bro</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3" />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      Nora Silvester
+                      <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                    </h3>
+                    <p class="text-sm">The subject goes here</p>
+                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+            </div>
+          </li>
+          <!-- Notifications Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="far fa-bell"></i>
+              <span class="badge badge-warning navbar-badge">15</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <span class="dropdown-item dropdown-header">15 Notifications</span>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-envelope mr-2"></i> 4 new messages
+                <span class="float-right text-muted text-sm">3 mins</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-users mr-2"></i> 8 friend requests
+                <span class="float-right text-muted text-sm">12 hours</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-file mr-2"></i> 3 new reports
+                <span class="float-right text-muted text-sm">2 days</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+              <i class="fas fa-expand-arrows-alt"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+              <i class="fas fa-th-large"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.navbar -->
+
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index3.html" class="brand-link">
+          <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8" />
+          <span class="brand-text font-weight-light">Pharmacy Admin</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar user panel (optional) -->
+          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+              <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
+            </div>
+            <div class="info">
+              <a href="#" class="d-block">Alex</a>
+            </div>
+          </div>
+
+          <!-- SidebarSearch Form -->
+          <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search">
+              <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search" />
+              <div class="input-group-append">
+                <button class="btn btn-sidebar">
+                  <i class="fas fa-search fa-fw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link active">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>
+                    Dashboard
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./index.html" class="nav-link active">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Dashboard v1</p>
+                    </a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a href="./index2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Dashboard v2</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./index3.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Dashboard v3</p>
+                    </a>
+                  </li> -->
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Customer
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">5</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="addCustomer.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Customer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="customerList.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Customer List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="creditCustomer.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Credit Customer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="paidCustomer.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Paid Customer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="customerLedger.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Customer Ledger</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Manufacturer
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">3</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="addManufacturer.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Manufacturer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="manufacturerList.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Manufacturer List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Manufacturer Ledger</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Medicine
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">9</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="addCategory.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Category</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="categoryList.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Category List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="addUnit.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Unit</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="unitList.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Unit List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="addType.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Type</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="typeList.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Type List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="leafSetting.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Leaf Setting</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="addMedicine.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Medicine</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="medicineList.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Medicine List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Purchase
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">2</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="addPurchase.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Purchaser</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="purchaseList.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Purchase List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Invoice
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">3</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="addInvoice.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Invoice</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="posInvoice.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>POS Invoice</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="invoiceList.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Invoice List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Return
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">4</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="addReturn.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Return</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="InvoiceReturnList.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Invoice Return List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="ManufacturerReturnList.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Manufacturer Return List</p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="WastageReturnList.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Wastage Return List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Stock
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">3</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="stockReport.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Stock Report</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="stockReportBatchWise.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Stock Report(Batch Wise)</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="available.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Available Stock</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Bank
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">2</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="addBank.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Bank</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="bankList.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Bank List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Accounts
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">10</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="chartOfAccount.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Chart Of Accounts</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="openingBalance.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Opening Balance</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="manufacturerPayment.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Manufacturer Payment</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="customerReceive.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Customer Receive</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="cashAdjustment.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Cash Adjustment</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="debitVoucher.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Debit Voucher</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="creditVoucher.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Credit Voucher</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="contraVoucher.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Contra Voucher</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="journalVoucher.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Journal Voucher</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="voucherList.html"nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Voucher List</p>
+                    </a>
+                  </li>
+                  <p>Report</p>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Report</p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="cashBack.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Cash Book</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="bankBooki.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Bank Book</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="generalLedger.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>General Ledger</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="trailBalance.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Trial Balance</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="profitLoss.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Profit Loss</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="cashFlow.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Cash Flow</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="coaPoint.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>COA Print</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="balanceSheet.html" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Balance Sheet</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Report
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">10</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Closing</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Closing List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Sales Report</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Sales Report (User)</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Sales Report (Product)</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Sales Report (Category)</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Purchase Report</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Purchase Report(Category)</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Human Resource
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">5</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Customer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Customer List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Credit Customer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Paid Customer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Customer Ledger</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Tax
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">3</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Tax Settings</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Income Tax</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Income Tax List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Service
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">4</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Service</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Service List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Invoice</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Invoice List</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-copy"></i>
+                  <p>
+                    Search
+                    <i class="fas fa-angle-left right"></i>
+                    <span class="badge badge-info right">3</span>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Medicine Search</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Invoice Search</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="pages/layout/boxed.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Purchase Search</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6"></div>
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active">DataTables</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-md-12">
+                    <div class="card ">
+                        <div class="card-header py-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <h6 class="fs-17 font-weight-600 mb-0">Salary Setup List</h6>
+                                            </div>
+                                            <div class="text-right">
+                                                                                   <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/add_salarysetup" class="btn btn-success btn-sm mr-1"><i class="fas fa-plus mr-1"></i>Add Salary Setup</a>
+                                                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                        <div class="card-body">
+            
+                            <div class="table-responsive">
+                                <div id="employeesalaryList_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-md-6"><div class="dt-buttons btn-group flex-wrap">      <button class="btn btn-secondary buttons-copy buttons-html5 btn-light" tabindex="0" aria-controls="employeesalaryList" type="button" title="Copy"><span><i class="far fa-copy"></i></span></button> <button class="btn btn-secondary buttons-excel buttons-html5 btn-light" tabindex="0" aria-controls="employeesalaryList" type="button" title="Excel"><span><i class="far fa-file-excel"></i></span></button> <button class="btn btn-secondary buttons-csv buttons-html5 btn-light" tabindex="0" aria-controls="employeesalaryList" type="button" title="CSV"><span><i class="far fa-file-alt"></i></span></button> <button class="btn btn-secondary buttons-pdf buttons-html5 btn-light" tabindex="0" aria-controls="employeesalaryList" type="button" title="PDF"><span><i class="far fa-file-pdf"></i></span></button> </div><div class="dataTables_length" id="employeesalaryList_length"><label>Show <select name="employeesalaryList_length" aria-controls="employeesalaryList" class="custom-select custom-select-sm form-control form-control-sm"><option value="15">15</option><option value="25">25</option><option value="50">50</option><option value="100">100</option><option value="250">250</option><option value="500">500</option><option value="-1">All</option></select> entries</label></div></div><div class="col-md-6"><div id="employeesalaryList_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="employeesalaryList"></label></div></div></div><div id="employeesalaryList_processing" class="dataTables_processing card" style="display: none;">Processing...</div><table class="table display table-bordered table-striped table-hover custom-table dataTable no-footer dtr-inline" cellspacing="0" width="100%" id="employeesalaryList" role="grid" aria-describedby="employeesalaryList_info" style="width: 100%;">
+                                    <thead>
+                                        <tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 120px;" aria-label="Sl">Sl</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 277px;" aria-label="Employee">Employee</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 318px;" aria-label="Salary Type">Salary Type</th><th class="sorting_asc" tabindex="0" aria-controls="employeesalaryList" rowspan="1" colspan="1" style="width: 262px;" aria-sort="ascending" aria-label="Date: activate to sort column descending">Date</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 337px;" aria-label="Gross Salary">Gross Salary</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 208px;" aria-label="Action">Action</th></tr>
+                                    </thead>
+                                    <tbody>
+                                      
+                                      
+                                    <tr role="row" class="odd"><td tabindex="0">1</td><td>Michal Deon</td><td>Salary</td><td class="sorting_1">2021-02-13</td><td>37500</td><td> <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/edit_salary_setup/2" class="btn btn-success-soft btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fas fa-edit" aria-hidden="true"></i></a> <a onclick=" confirm('Are You Sure ?')" href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/delete_salsetup/2" class="btn btn-danger-soft btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="far fa-trash-alt" aria-hidden="true"></i></a></td></tr><tr role="row" class="even"><td tabindex="0">2</td><td>Halim Khan</td><td>Salary</td><td class="sorting_1">2021-02-13</td><td>32500</td><td> <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/edit_salary_setup/1" class="btn btn-success-soft btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fas fa-edit" aria-hidden="true"></i></a> <a onclick=" confirm('Are You Sure ?')" href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/delete_salsetup/1" class="btn btn-danger-soft btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="far fa-trash-alt" aria-hidden="true"></i></a></td></tr><tr role="row" class="odd"><td tabindex="0">3</td><td>Jack  jack</td><td>Hourly</td><td class="sorting_1">2021-02-14</td><td>83.2</td><td> <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/edit_salary_setup/6" class="btn btn-success-soft btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fas fa-edit" aria-hidden="true"></i></a> <a onclick=" confirm('Are You Sure ?')" href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/delete_salsetup/6" class="btn btn-danger-soft btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="far fa-trash-alt" aria-hidden="true"></i></a></td></tr><tr role="row" class="even"><td tabindex="0">4</td><td>Jonson  Jon</td><td>Hourly</td><td class="sorting_1">2021-02-14</td><td>82.4</td><td> <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/edit_salary_setup/3" class="btn btn-success-soft btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fas fa-edit" aria-hidden="true"></i></a> <a onclick=" confirm('Are You Sure ?')" href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/delete_salsetup/3" class="btn btn-danger-soft btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="far fa-trash-alt" aria-hidden="true"></i></a></td></tr><tr role="row" class="odd"><td tabindex="0">5</td><td>Korai  korai</td><td>Salary</td><td class="sorting_1">2021-02-18</td><td>10200</td><td> <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/edit_salary_setup/4" class="btn btn-success-soft btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fas fa-edit" aria-hidden="true"></i></a> <a onclick=" confirm('Are You Sure ?')" href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/delete_salsetup/4" class="btn btn-danger-soft btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="far fa-trash-alt" aria-hidden="true"></i></a></td></tr><tr role="row" class="even"><td tabindex="0">6</td><td>Armand Petty</td><td>Hourly</td><td class="sorting_1">2022-04-24</td><td>30000</td><td> <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/edit_salary_setup/7" class="btn btn-success-soft btn-sm" data-toggle="tooltip" data-placement="left" title="Update"><i class="fas fa-edit" aria-hidden="true"></i></a> <a onclick=" confirm('Are You Sure ?')" href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/delete_salsetup/7" class="btn btn-danger-soft btn-sm" data-toggle="tooltip" data-placement="right" title="Delete "><i class="far fa-trash-alt" aria-hidden="true"></i></a></td></tr></tbody>
+                                     
+                                </table><div class="bottom"><div class="dataTables_info" id="employeesalaryList_info" role="status" aria-live="polite">Showing 1 to 6 of 6 entries</div><div class="dataTables_paginate paging_simple_numbers" id="employeesalaryList_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="employeesalaryList_previous"><a href="#" aria-controls="employeesalaryList" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="employeesalaryList" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="employeesalaryList_next"><a href="#" aria-controls="employeesalaryList" data-dt-idx="2" tabindex="0" class="page-link">Next</a></li></ul></div></div><div class="clear"></div></div>
+                                
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->
+      <footer class="main-footer">
+        <div class="float-right d-none d-sm-block"><b>Version</b> 3.2.0</div>
+        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+      </footer>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+      </aside>
+      <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+      $.widget.bridge("uibutton", $.ui.button);
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard.js"></script>
+    <!-- Page specific script -->
+    <script>
+      $(function () {
+        bsCustomFileInput.init();
+      });
+    </script>
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="../../plugins/jszip/jszip.min.js"></script>
+    <script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
+    <!-- Page specific script -->
+    <script>
+      $(function () {
+        $("#example1")
+          .DataTable({
+            responsive: true,
+            lengthChange: false,
+            autoWidth: false,
+            buttons: ["copy", "csv", "excel", "pdf", "print", "colvis"],
+          })
+          .buttons()
+          .container()
+          .appendTo("#example1_wrapper .col-md-6:eq(0)");
+        $("#example2").DataTable({
+          paging: true,
+          lengthChange: false,
+          searching: false,
+          ordering: true,
+          info: true,
+          autoWidth: false,
+          responsive: true,
+        });
+      });
+    </script>
+  </body>
+</html>

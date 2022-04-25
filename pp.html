@@ -1,0 +1,1288 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Person  Ledger" />
+    <meta name="author" content="Bdtask" />
+    <title>Person Ledger</title>
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/dist/img/favicon/1612675588_2e4ae5951792e016e4c5.png" />
+    <!--Global Styles(used by all pages)-->
+    <!-- style for ltl bootstrap css-->
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- style for rtl custom bootstap css -->
+
+    <!-- style for ltl metismenu css-->
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/metisMenu/metisMenu.min.css" rel="stylesheet" />
+    <!-- style for rtl metismenu css-->
+
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/fontawesome/css/all.min.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock Salt:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/typicons/src/typicons.min.css" rel="stylesheet" />
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/themify-icons/themify-icons.min.css" rel="stylesheet" />
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" />
+
+    <!--Third party Styles(used by this page)-->
+
+    <!-- datatable css -->
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/dataTables.min.css" rel="stylesheet" />
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" />
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" />
+    <!-- datatable css end -->
+    <!--Start Your Custom Style Now-->
+
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/select2/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/select2-bootstrap4/dist/select2-bootstrap4.min.css" rel="stylesheet" />
+
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/toastr/toastr.css" rel="stylesheet" />
+
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/modals/component.css" rel="stylesheet" />
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/icheck/skins/all.css" rel="stylesheet" />
+
+    <!-- style for ltl custom css-->
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/dist/css/style.min.css" rel="stylesheet" />
+
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/vakata-jstree/dist/themes/default/style.min.css" rel="stylesheet" />
+
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/dist/css/print.css" rel="stylesheet" />
+    <link href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/dist/css/custom.css" rel="stylesheet" />
+
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/jQuery/jquery.min.js"></script>
+    <style type="text/css">
+      .jqstooltip {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        visibility: hidden;
+        background: rgb(0, 0, 0) transparent;
+        background-color: rgba(0, 0, 0, 0.6);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+        color: white;
+        font: 10px arial, san serif;
+        text-align: left;
+        white-space: nowrap;
+        padding: 5px;
+        border: 1px solid white;
+        z-index: 10000;
+      }
+      .jqsfield {
+        color: white;
+        font: 10px arial, san serif;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body class="fixed sidebar-collapse">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper" style="display: none">
+      <div class="loader">
+        <div class="preloader">
+          <div class="spinner-layer pl-green">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+        <p>Please wait...</p>
+      </div>
+    </div>
+    <!-- #END# Page Loader -->
+
+    <!-- HEADER: MENU -->
+
+    <div class="wrapper">
+      <nav class="sidebar sidebar-bunker">
+        <div class="sidebar-header">
+          <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo" class="sidebar-brand"
+            ><img
+              src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/dist/img/favicon/1612675588_2e4ae5951792e016e4c5.png"
+              class="sidebar-brand_icon"
+              alt=""
+            />
+            <span class="sidebar-brand_text logo-text">pharmacare</span>
+          </a>
+        </div>
+        <!--/.sidebar header-->
+        <div class="profile-element d-flex align-items-center flex-shrink-0">
+          <div class="avatar online">
+            <img
+              src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/dist/img/user/1613544780_233226acaf9e255a6bf1.jpg"
+              class="img-fluid rounded-circle"
+              alt=""
+            />
+          </div>
+          <div class="profile-text">
+            <h6 class="m-0">Admin User</h6>
+            <span>admin@gmail.com</span>
+          </div>
+        </div>
+        <!--/.profile element-->
+
+        <div class="sidebar-body custom-sidebar ps ps--active-x ps--active-y">
+          <nav class="sidebar-nav">
+            <ul class="metismenu">
+              <li class="">
+                <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo"><i class="typcn typcn-home-outline mr-2"></i> Dashboard</a>
+              </li>
+
+              <!-- customer menu start -->
+
+              <li class="">
+                <a class="has-arrow material-ripple" href="#">
+                  <i class="typcn typcn-group mr-2"></i>
+                  Customer
+                </a>
+                <ul class="nav-second-level mm-collapse">
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/customer/add_customer">Add Customer</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/customer/customer_list"> Customer List</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/customer/credit_customer"> Credit Customer</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/customer/paid_customer"> Paid Customer</a></li>
+
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/customer/customer_ledger"> Customer Ledger</a></li>
+                </ul>
+              </li>
+
+              <!-- customer menu end -->
+
+              <!-- manufacturer menu start -->
+
+              <li class="">
+                <a class="has-arrow material-ripple" href="#">
+                  <i class="typcn typcn-group-outline mr-2"></i>
+                  Manufacturer
+                </a>
+                <ul class="nav-second-level mm-collapse">
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/manufacturer/add_manufacturer">Add Manufacturer</a></li>
+
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/manufacturer/manufacturer_list"> Manufacturer List</a></li>
+
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/manufacturer/manufacturer_ledger"> Manufacturer Ledger</a></li>
+                </ul>
+              </li>
+              <!-- manufacturer menu end -->
+
+              <!-- Medicine menu start -->
+
+              <li class="">
+                <a class="has-arrow material-ripple" href="#">
+                  <i class="fas fa-pills mr-2"></i>
+                  Medicine
+                </a>
+                <ul class="nav-second-level mm-collapse">
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/medicine/add_category">Add Category</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/medicine/category_list"> Category List</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/medicine/add_unit">Add Unit</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/medicine/unit_list"> Unit List</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/medicine/add_type">Add Type</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/medicine/type_list"> Type List</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/medicine/leaf_setting"> Leaf Setting</a></li>
+
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/medicine/add_medicine"> Add Medicine</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/medicine/medicine_list"> Medicine List</a></li>
+                </ul>
+              </li>
+
+              <!-- Medicine menu end -->
+
+              <!-- Purchase menu start -->
+
+              <li class="">
+                <a class="has-arrow material-ripple" href="#">
+                  <i class="typcn typcn-shopping-cart mr-2"></i>
+                  Purchase
+                </a>
+                <ul class="nav-second-level mm-collapse">
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/purchase/add_purchase">Add Purchase</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/purchase/purchase_list"> Purchase List</a></li>
+                </ul>
+              </li>
+
+              <!-- Purchase menu end -->
+
+              <!-- invoice part start -->
+              <li class="">
+                <a class="has-arrow material-ripple" href="#">
+                  <i class="fas fa-hand-holding-usd mr-2"></i>
+                  Invoice
+                </a>
+                <ul class="nav-second-level mm-collapse">
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/invoice/add_invoice">Add Invoice</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/invoice/pos_invoice">POS Invoice</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/invoice/invoice_list"> Invoice List</a></li>
+                </ul>
+              </li>
+
+              <!-- invoice part end -->
+
+              <!-- return menu start -->
+
+              <li class="">
+                <a class="has-arrow material-ripple" href="#">
+                  <i class="fas fa-retweet mr-2"></i>
+                  Return
+                </a>
+                <ul class="nav-second-level mm-collapse">
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/return/add_return">Add Return</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/return/invoice_return_list">Invoice Return List</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/return/manufacturer_return_list">Manufacturer Return List</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/return/wastage_return_list">Wastage Return List</a></li>
+                </ul>
+              </li>
+
+              <!-- return menu end -->
+
+              <!-- stock menu start -->
+              <li class="">
+                <a class="has-arrow material-ripple" href="#">
+                  <i class="fab fa-linode mr-3"></i>
+                  Stock
+                </a>
+                <ul class="nav-second-level mm-collapse">
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/stock/stock_list">Stock Report</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/stock/stock_list_batchWise"> Stock Report(Batch Wise)</a></li>
+
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/stock/available_stock"> Available Stock</a></li>
+                </ul>
+              </li>
+
+              <!-- stock menu end -->
+
+              <!-- bank menu start -->
+
+              <li class="">
+                <a class="has-arrow material-ripple" href="#">
+                  <i class="fas fa-landmark mr-2"></i>
+                  Bank
+                </a>
+                <ul class="nav-second-level mm-collapse">
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/bank/add_bank">Add Bank</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/bank/bank_list"> Bank List</a></li>
+                </ul>
+              </li>
+              <!-- bank menu end -->
+
+              <!-- account menu start -->
+
+              <li class="">
+                <a class="has-arrow material-ripple" href="#">
+                  <i class="fas fa-money-check-alt mr-2"></i>
+                  Accounts
+                </a>
+                <ul class="nav-second-level mm-collapse">
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/coa">Chart Of Accounts</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/opening_balance">Opening Balance</a></li>
+
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/manufaturer_payment">Manufacturer Payment</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/customer_receive">Customer Receive</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/cash_adjustment">Cash Adjustment</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/debit_voucher">Debit Voucher</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/credit_voucher">Credit Voucher</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/contra_voucher">Contra Voucher</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/journal_voucher">Journal Voucher</a></li>
+
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/voucher_list">Voucher List</a></li>
+
+                  <li>
+                    <a class="has-arrow" href="#" aria-expanded="false"> Report</a>
+                    <ul class="nav-third-level mm-collapse">
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/cash_book">Cash Book</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/bank_book">Bank Book</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/general_ledger">General Ledger</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/trial_balance_form">Trial Balance</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/profit_loss">Profit Loss</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/cash_flow">Cash Flow</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/coa_print">COA Print</a></li>
+
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/account/balance_sheet">Balance Sheet</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!-- account menu end -->
+
+              <!-- report menu start -->
+
+              <li class="">
+                <a class="has-arrow material-ripple" href="#">
+                  <i class="fas fa-book-open mr-2"></i>
+                  Report
+                </a>
+                <ul class="nav-second-level mm-collapse">
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/report/add_closing">Add Closing</a></li>
+
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/report/closing_list">Closing List</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/report/sales_report">Sales Report</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/report/userwise_sales_report">Sales Report (User)</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/report/productwise_sales_report">Sales Report (Product)</a></li>
+
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/report/categorywise_sales_report">Sales Report (Category)</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/report/purchase_report">Purchase Report</a></li>
+                  <li class="">
+                    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/report/purchase_report_categorywise">Purchase Report(Category)</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- report menu end -->
+
+              <!-- Hrm menu start -->
+
+              <li class="mm-active">
+                <a class="has-arrow material-ripple" href="#" aria-expanded="true">
+                  <i class="far fa-address-card mr-2"></i>
+                  Human Resource
+                </a>
+                <ul class="nav-second-level mm-collapse mm-show">
+                  <li>
+                    <a class="has-arrow" href="#" aria-expanded="false"> Employee</a>
+                    <ul class="nav-third-level mm-collapse">
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/employee/add_designation">Add Designation</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/employee/designation_list"> Designation List</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/employee/add_employee"> Add Employee</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/employee/employee_list"> Employee List</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="has-arrow" href="#" aria-expanded="false"> Attendance</a>
+                    <ul class="nav-third-level mm-collapse">
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/attendance/add_attendance">Add Attendance</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/attendance/attendance_list"> Attendance List</a></li>
+                      <li class="">
+                        <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/attendance/datewise_attendance_report"> Date Wise Attendance Report</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="has-arrow" href="#" aria-expanded="false"> Payroll</a>
+                    <ul class="nav-third-level mm-collapse">
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/add_benefits">Add Benefits</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/benefit_list">Benefit List</a></li>
+
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/add_salarysetup">Add Salary Setup</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/salary_setup_list">Salary Setup List</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/salary_generate">Salary Generate</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/salary_sheet">Salary Sheet</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/payroll/salary_payment">Salary Payment</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="has-arrow" href="#" aria-expanded="false"> Expense</a>
+                    <ul class="nav-third-level mm-collapse">
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/expense/add_expense_item">Add Expense Item</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/expense/expense_item_list">Expense Item List</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/expense/add_expense">Add Expense</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/expense/expense_list">Expense List</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/expense/expense_statement">Expense Statement</a></li>
+                    </ul>
+                  </li>
+                  <li class="mm-active">
+                    <a class="has-arrow" href="#" aria-expanded="true"> Loan</a>
+                    <ul class="nav-third-level mm-collapse mm-show">
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/loan/add_person">Add Person</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/loan/person_list">Person List</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/loan/add_loan">Add Loan</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/loan/add_payment">Add Payment</a></li>
+                      <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/loan/loan_list">Loan List</a></li>
+                      <li class="mm-active">
+                        <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/loan/person_ledger" aria-expanded="true">Person Ledger</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Hrm menu end -->
+              <!-- tax menu start -->
+
+              <li class="">
+                <a class="has-arrow material-ripple" href="#">
+                  <i class="fas fa-hryvnia mr-3"></i>
+                  Tax
+                </a>
+                <ul class="nav-second-level mm-collapse">
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/tax/tax_setting">Tax Settings</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/tax/add_income_tax">Add Income Tax</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/tax/income_tax_list">Income Tax List</a></li>
+                </ul>
+              </li>
+              <!-- tax menu end -->
+              <!-- service menu start -->
+
+              <li class="">
+                <a class="has-arrow material-ripple" href="#">
+                  <i class="fab fa-servicestack mr-3"></i>
+                  Service
+                </a>
+                <ul class="nav-second-level mm-collapse">
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/service/add_service">Add Service</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/service/service_list"> Service List</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/service/service_invoice_form"> Add Invoice</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/service/service_invoice_list"> Invoice List</a></li>
+                </ul>
+              </li>
+              <!-- service menu end -->
+
+              <!-- search menu start -->
+
+              <li class="">
+                <a class="has-arrow material-ripple" href="#">
+                  <i class="fas fa-search mr-3"></i>
+                  Search
+                </a>
+                <ul class="nav-second-level mm-collapse">
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/search/medicine_search">Medicine Search</a></li>
+
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/search/invoice_search">Invoice Search</a></li>
+
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/search/purchase_search">Purchase Search</a></li>
+                </ul>
+              </li>
+              <!-- search menu end -->
+
+              <!-- setting menu start -->
+
+              <li class="">
+                <a class="has-arrow material-ripple" href="#">
+                  <i class="typcn typcn-cog-outline mr-3"></i>
+                  Application Setting
+                </a>
+                <ul class="nav-second-level mm-collapse">
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/user/add_user"> Add User</a></li>
+
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/user/user_list"> User List</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/currency/currency_list"> Currency</a></li>
+
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/dashboard/setting"> Setting</a></li>
+                  <li class=""><a href="javascript:void(0)" onclick="demo_mode()"> Download Backup</a></li>
+                  <li class=""><a href="javascript:void(0)" onclick="demo_mode()"> Restore Database</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/dashboard/db_import"> Database Import</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/dashboard/panel_setting"> Panel Setting</a></li>
+                  <!--<li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/role/add_module">Add Module</a></li>-->
+                  <!--<li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/role/add_menu">Add Menu </a></li>-->
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/role/add_role"> Add Role</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/role/role_list"> Role List</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/role/assign_role">Assign Role</a></li>
+                  <li class=""><a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/dashboard/language"> Language</a></li>
+                </ul>
+              </li>
+              <!-- setting menu end -->
+
+              <li class="">
+                <a class="has-arrow material-ripple" href="#"> <i class="fab fa-autoprefixer mr-2"></i> Autoupdate </a>
+                <ul class="nav-second-level mm-collapse">
+                  <li class="">
+                    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/autoupdate/autoupdate"> Autoupdate</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="ps__rail-x" style="width: 70px; left: 0px; top: 0px"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 56px"></div></div>
+          <div class="ps__rail-y" style="top: 0px; height: 422px; right: 0px"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 38px"></div></div>
+        </div>
+        <!-- sidebar-body -->
+      </nav>
+      <!-- CONTENT -->
+      <div class="content-wrapper">
+        <div class="main-content">
+          <nav class="navbar-custom-menu navbar navbar-expand-xl m-0">
+            <div class="sidebar-toggle-icon toggled" id="sidebarCollapse">sidebar toggle<span></span></div>
+            <!--/.sidebar toggle icon-->
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- Toggler -->
+              <button
+                type="button"
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#navbar-collapse"
+                aria-expanded="true"
+                aria-label="Toggle navigation"
+              >
+                <span></span> <span></span>
+              </button>
+            </div>
+            <div class="navbar-icon d-flex">
+              <ul class="navbar-nav flex-row align-items-center">
+                <li class="nav-item dropdown notification">
+                  <a class="nav-link" href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/dashboard/expired_medicine" title="Expired">
+                    <i class="typcn typcn-bell"></i>
+                    <span class="notification-badge">0</span>
+                  </a>
+                </li>
+                <!--/.dropdown-->
+                <li class="nav-item dropdown notification">
+                  <a class="nav-link" href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/dashboard/stockout_medicine" title="Stock Out">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span class="notification-badge">9</span>
+                  </a>
+                </li>
+                <!--/.dropdown-->
+                <li class="nav-item dropdown user-menu">
+                  <a class="nav-link dropdown-toggle material-ripple" href="#" data-toggle="dropdown">
+                    <!--<img src="assets/dist/img/user2-160x160.png" alt="">-->
+                    <i class="typcn typcn-user-add-outline"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-header d-sm-none">
+                      <a href="" class="header-arrow"><i class="icon ion-md-arrow-back"></i></a>
+                    </div>
+                    <div class="user-header">
+                      <div class="img-user">
+                        <img src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/dist/img/user/1613544780_233226acaf9e255a6bf1.jpg" alt="" />
+                      </div>
+                      <!-- img-user -->
+                      <h6>Admin User</h6>
+                      <span>admin@gmail.com</span>
+                    </div>
+                    <!-- user-header -->
+                    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/dashboard/my_profile" class="dropdown-item"
+                      ><i class="typcn typcn-user-outline"></i> My Profile</a
+                    >
+                    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/user/edit_user/1" class="dropdown-item"
+                      ><i class="typcn typcn-edit"></i> Edit Profile</a
+                    >
+                    <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/logout" class="dropdown-item"
+                      ><i class="typcn typcn-key-outline"></i> Sign Out</a
+                    >
+                  </div>
+                  <!--/.dropdown-menu -->
+                </li>
+              </ul>
+              <!--/.navbar nav-->
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="typcn typcn-th-menu-outline"></i>
+            </button>
+          </nav>
+
+          <div class="body-content px-3 py-3">
+            <div class="row">
+              <div class="col-md-12 col-md-12">
+                <div class="card">
+                  <div class="card-header py-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <h6 class="fs-17 font-weight-600 mb-0">Person Ledger</h6>
+                      </div>
+                      <div class="text-right">
+                        <a href="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/loan/add_loan" class="btn btn-success btn-sm mr-1"
+                          ><i class="fas fa-plus mr-1"></i>Add Loan</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <form action="" class="form-inline" method="post" accept-charset="utf-8">
+                          <div class="input-group mb-2 mr-sm-2 list-width">
+                            <select
+                              name="person_id"
+                              class="form-control select2 select2-hidden-accessible"
+                              id="person_id"
+                              data-select2-id="select2-data-person_id"
+                              tabindex="-1"
+                              aria-hidden="true"
+                            >
+                              <option value="" selected="selected" data-select2-id="select2-data-2-8mr9">Select Person</option>
+                              <option value="102030200005">Abrar</option>
+                              <option value="102030200003">Ayman</option>
+                              <option value="102030200007">Babul</option>
+                              <option value="102030200002">Feriha</option>
+                              <option value="102030200006">Jack</option>
+                              <option value="102030200001">korai</option>
+                              <option value="102030200004">Md sabuj Ahmed</option></select
+                            ><span
+                              class="select2 select2-container select2-container--default"
+                              dir="ltr"
+                              data-select2-id="select2-data-1-eczo"
+                              style="width: 155px"
+                              ><span class="selection"
+                                ><span
+                                  class="select2-selection select2-selection--single"
+                                  role="combobox"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                  tabindex="0"
+                                  aria-disabled="false"
+                                  aria-labelledby="select2-person_id-container"
+                                  ><span
+                                    class="select2-selection__rendered"
+                                    id="select2-person_id-container"
+                                    role="textbox"
+                                    aria-readonly="true"
+                                    title="Select Person"
+                                    >Select Person</span
+                                  ><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span
+                              ><span class="dropdown-wrapper" aria-hidden="true"></span
+                            ></span>
+                          </div>
+                          <label class="sr-only" for="from_date">Start Date</label>
+                          <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">Start Date</div>
+                            </div>
+                            <input type="text" class="form-control datepicker psdate" name="from_date" id="from_date" placeholder="Start Date" value="" />
+                          </div>
+
+                          <label class="sr-only" for="to_date">End Date</label>
+                          <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">End Date</div>
+                            </div>
+                            <input type="text" class="form-control datepicker pedate" id="to_date" name="to_date" placeholder="End Date" />
+                          </div>
+
+                          <button type="button" id="btn-filter-pur" class="btn btn-success mb-2">Find</button>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="table-responsive">
+                      <div id="loanpersonledger_wrapper" class="dataTables_wrapper dt-bootstrap4">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="dt-buttons btn-group flex-wrap">
+                              <button
+                                class="btn btn-secondary buttons-copy buttons-html5 btn-light"
+                                tabindex="0"
+                                aria-controls="loanpersonledger"
+                                type="button"
+                                title="Copy"
+                              >
+                                <span><i class="far fa-copy"></i></span>
+                              </button>
+                              <button
+                                class="btn btn-secondary buttons-excel buttons-html5 btn-light"
+                                tabindex="0"
+                                aria-controls="loanpersonledger"
+                                type="button"
+                                title="Excel"
+                              >
+                                <span><i class="far fa-file-excel"></i></span>
+                              </button>
+                              <button
+                                class="btn btn-secondary buttons-csv buttons-html5 btn-light"
+                                tabindex="0"
+                                aria-controls="loanpersonledger"
+                                type="button"
+                                title="CSV"
+                              >
+                                <span><i class="far fa-file-alt"></i></span>
+                              </button>
+                              <button
+                                class="btn btn-secondary buttons-pdf buttons-html5 btn-light"
+                                tabindex="0"
+                                aria-controls="loanpersonledger"
+                                type="button"
+                                title="PDF"
+                              >
+                                <span><i class="far fa-file-pdf"></i></span>
+                              </button>
+                            </div>
+                            <div class="dataTables_length" id="loanpersonledger_length">
+                              <label
+                                >Show
+                                <select
+                                  name="loanpersonledger_length"
+                                  aria-controls="loanpersonledger"
+                                  class="custom-select custom-select-sm form-control form-control-sm"
+                                >
+                                  <option value="15">15</option>
+                                  <option value="25">25</option>
+                                  <option value="50">50</option>
+                                  <option value="100">100</option>
+                                  <option value="250">250</option>
+                                  <option value="500">500</option>
+                                  <option value="-1">All</option>
+                                </select>
+                                entries</label
+                              >
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div id="loanpersonledger_filter" class="dataTables_filter">
+                              <label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="loanpersonledger" /></label>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="loanpersonledger_processing" class="dataTables_processing card" style="display: none">Processing...</div>
+                        <table
+                          class="table display table-bordered table-striped table-hover custom-table dataTable dtr-inline"
+                          cellspacing="0"
+                          width="100%"
+                          id="loanpersonledger"
+                          role="grid"
+                          aria-describedby="loanpersonledger_info"
+                          style="width: 100%"
+                        >
+                          <thead>
+                            <tr role="row">
+                              <th class="text-center sorting_disabled" rowspan="1" colspan="1" style="width: 103px" aria-label="Sl">Sl</th>
+                              <th class="text-center sorting_disabled" rowspan="1" colspan="1" style="width: 307px" aria-label="Person Name">Person Name</th>
+                              <th
+                                class="text-center sorting_asc"
+                                tabindex="0"
+                                aria-controls="loanpersonledger"
+                                rowspan="1"
+                                colspan="1"
+                                style="width: 229px"
+                                aria-sort="ascending"
+                                aria-label="Date: activate to sort column descending"
+                              >
+                                Date
+                              </th>
+                              <th class="text-center sorting_disabled" rowspan="1" colspan="1" style="width: 224px" aria-label="Remarks">Remarks</th>
+                              <th class="text-center text-right total_debit sorting_disabled" rowspan="1" colspan="1" style="width: 203px" aria-label="Debit">
+                                Debit
+                              </th>
+                              <th class="text-center text-right total_credit sorting_disabled" rowspan="1" colspan="1" style="width: 180px" aria-label="Credit">
+                                Credit
+                              </th>
+                              <th
+                                class="text-center text-right sorting"
+                                tabindex="0"
+                                aria-controls="loanpersonledger"
+                                rowspan="1"
+                                colspan="1"
+                                style="width: 229px"
+                                aria-label="Balance: activate to sort column ascending"
+                              >
+                                Balance
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr role="row" class="odd">
+                              <td tabindex="0">1</td>
+                              <td>Feriha</td>
+                              <td class="sorting_1">2021-02-18</td>
+                              <td></td>
+                              <td class="text-right total_debit">$5,000.00</td>
+                              <td class="text-right total_credit">$0.00</td>
+                              <td class="text-right">$5,000.00</td>
+                            </tr>
+                            <tr role="row" class="even">
+                              <td tabindex="0">2</td>
+                              <td>korai</td>
+                              <td class="sorting_1">2021-02-18</td>
+                              <td>demo</td>
+                              <td class="text-right total_debit">$6,000.00</td>
+                              <td class="text-right total_credit">$0.00</td>
+                              <td class="text-right">$11,000.00</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <th colspan="5" class="text-right total_debit" rowspan="1">$ 11,000.00</th>
+                              <th class="text-right total_credit" rowspan="1" colspan="1">$ 0.00</th>
+                              <th class="text-right" rowspan="1" colspan="1"></th>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <div class="bottom">
+                          <div class="dataTables_info" id="loanpersonledger_info" role="status" aria-live="polite">Showing 1 to 2 of 2 entries</div>
+                          <div class="dataTables_paginate paging_simple_numbers" id="loanpersonledger_paginate">
+                            <ul class="pagination">
+                              <li class="paginate_button page-item previous disabled" id="loanpersonledger_previous">
+                                <a href="#" aria-controls="loanpersonledger" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                              </li>
+                              <li class="paginate_button page-item active">
+                                <a href="#" aria-controls="loanpersonledger" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                              </li>
+                              <li class="paginate_button page-item next disabled" id="loanpersonledger_next">
+                                <a href="#" aria-controls="loanpersonledger" data-dt-idx="2" tabindex="0" class="page-link">Next</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
+
+        <footer class="footer-content">
+          <div class="footer-text d-flex align-items-center justify-content-between">
+            <div class="copy">Copyright@bdtask</div>
+            <div class="credit">Developed by: <a href="#">Bdtask</a></div>
+          </div>
+          <input type="hidden" name="" id="base_url" value="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo" />
+          <input type="hidden" name="" id="currency" value="$" />
+          <input type="hidden" name="" id="discount_type" value="1" />
+          <input type="hidden" name="csrf_test_name" id="csrf_test_name" value="a4e47a42c9f1bf7c2e3f94b6afb5fce8" />
+        </footer>
+        <!--/.footer content-->
+
+        <!-- Modal fade in & scale effect -->
+
+        <div class="overlay"></div>
+      </div>
+    </div>
+
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/dist/js/popper.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/metisMenu/metisMenu.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <!-- Third Party Scripts(used by this page)-->
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/sparkline/sparkline.min.js"></script>
+
+    <!--Page Active Scripts(used by this page)-->
+
+    <!--Page Scripts(used by all page)-->
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/dist/js/sidebar.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/chartJs/Chart.min.js"></script>
+    <!--Page Active Scripts(used by this page)-->
+
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/dataTables.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/dataTables.responsive.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/dataTables.buttons.min.js"></script>
+
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/buttons.bootstrap4.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/jszip.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/pdfmake.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/vfs_fonts.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/buttons.html5.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/buttons.print.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/datatables/data-bootstrap4.active.js"></script>
+
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/moment/moment.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/daterangepicker/daterangepicker.js"></script>
+    <!--Page Active Scripts(used by this page)-->
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/toastr/toastr.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/select2/dist/js/select2.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/vakata-jstree/dist/jstree.min.js"></script>
+    <!--Page Active Scripts(used by this page)-->
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/dist/js/pages/tree-view.active.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/dist/js/print.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/modals/classie.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/modals/modalEffects.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/plugins/icheck/icheck.min.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/dist/js/pages/icheck.active.js"></script>
+    <script src="https://pharmacyv5.bdtask.com/pharmacare-9.4_demo/assets/dist/js/pages/custom.js?v=1"></script>
+
+    <div id="toTop" class="btn-top"><i class="typcn typcn-arrow-up fs-21"></i></div>
+    <div class="daterangepicker ltr single auto-apply opensright show-calendar" style="top: 197.188px; left: 333.125px; right: auto; display: none">
+      <div class="ranges"></div>
+      <div class="drp-calendar left single" style="display: block">
+        <div class="calendar-table">
+          <table class="table-condensed">
+            <thead>
+              <tr>
+                <th class="prev available"><span></span></th>
+                <th colspan="5" class="month">
+                  <select class="monthselect">
+                    <option value="0">Jan</option>
+                    <option value="1">Feb</option>
+                    <option value="2">Mar</option>
+                    <option value="3" selected="selected">Apr</option>
+                    <option value="4">May</option>
+                    <option value="5">Jun</option>
+                    <option value="6">Jul</option>
+                    <option value="7">Aug</option>
+                    <option value="8">Sep</option>
+                    <option value="9">Oct</option>
+                    <option value="10">Nov</option>
+                    <option value="11">Dec</option></select
+                  ><select class="yearselect">
+                    <option value="1901">1901</option>
+                    <option value="1902">1902</option>
+                    <option value="1903">1903</option>
+                    <option value="1904">1904</option>
+                    <option value="1905">1905</option>
+                    <option value="1906">1906</option>
+                    <option value="1907">1907</option>
+                    <option value="1908">1908</option>
+                    <option value="1909">1909</option>
+                    <option value="1910">1910</option>
+                    <option value="1911">1911</option>
+                    <option value="1912">1912</option>
+                    <option value="1913">1913</option>
+                    <option value="1914">1914</option>
+                    <option value="1915">1915</option>
+                    <option value="1916">1916</option>
+                    <option value="1917">1917</option>
+                    <option value="1918">1918</option>
+                    <option value="1919">1919</option>
+                    <option value="1920">1920</option>
+                    <option value="1921">1921</option>
+                    <option value="1922">1922</option>
+                    <option value="1923">1923</option>
+                    <option value="1924">1924</option>
+                    <option value="1925">1925</option>
+                    <option value="1926">1926</option>
+                    <option value="1927">1927</option>
+                    <option value="1928">1928</option>
+                    <option value="1929">1929</option>
+                    <option value="1930">1930</option>
+                    <option value="1931">1931</option>
+                    <option value="1932">1932</option>
+                    <option value="1933">1933</option>
+                    <option value="1934">1934</option>
+                    <option value="1935">1935</option>
+                    <option value="1936">1936</option>
+                    <option value="1937">1937</option>
+                    <option value="1938">1938</option>
+                    <option value="1939">1939</option>
+                    <option value="1940">1940</option>
+                    <option value="1941">1941</option>
+                    <option value="1942">1942</option>
+                    <option value="1943">1943</option>
+                    <option value="1944">1944</option>
+                    <option value="1945">1945</option>
+                    <option value="1946">1946</option>
+                    <option value="1947">1947</option>
+                    <option value="1948">1948</option>
+                    <option value="1949">1949</option>
+                    <option value="1950">1950</option>
+                    <option value="1951">1951</option>
+                    <option value="1952">1952</option>
+                    <option value="1953">1953</option>
+                    <option value="1954">1954</option>
+                    <option value="1955">1955</option>
+                    <option value="1956">1956</option>
+                    <option value="1957">1957</option>
+                    <option value="1958">1958</option>
+                    <option value="1959">1959</option>
+                    <option value="1960">1960</option>
+                    <option value="1961">1961</option>
+                    <option value="1962">1962</option>
+                    <option value="1963">1963</option>
+                    <option value="1964">1964</option>
+                    <option value="1965">1965</option>
+                    <option value="1966">1966</option>
+                    <option value="1967">1967</option>
+                    <option value="1968">1968</option>
+                    <option value="1969">1969</option>
+                    <option value="1970">1970</option>
+                    <option value="1971">1971</option>
+                    <option value="1972">1972</option>
+                    <option value="1973">1973</option>
+                    <option value="1974">1974</option>
+                    <option value="1975">1975</option>
+                    <option value="1976">1976</option>
+                    <option value="1977">1977</option>
+                    <option value="1978">1978</option>
+                    <option value="1979">1979</option>
+                    <option value="1980">1980</option>
+                    <option value="1981">1981</option>
+                    <option value="1982">1982</option>
+                    <option value="1983">1983</option>
+                    <option value="1984">1984</option>
+                    <option value="1985">1985</option>
+                    <option value="1986">1986</option>
+                    <option value="1987">1987</option>
+                    <option value="1988">1988</option>
+                    <option value="1989">1989</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022" selected="selected">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                    <option value="2033">2033</option>
+                    <option value="2034">2034</option>
+                    <option value="2035">2035</option>
+                    <option value="2036">2036</option>
+                    <option value="2037">2037</option>
+                    <option value="2038">2038</option>
+                    <option value="2039">2039</option>
+                    <option value="2040">2040</option>
+                    <option value="2041">2041</option>
+                    <option value="2042">2042</option>
+                    <option value="2043">2043</option>
+                    <option value="2044">2044</option>
+                    <option value="2045">2045</option>
+                    <option value="2046">2046</option>
+                    <option value="2047">2047</option>
+                    <option value="2048">2048</option>
+                    <option value="2049">2049</option>
+                    <option value="2050">2050</option>
+                  </select>
+                </th>
+                <th class="next available"><span></span></th>
+              </tr>
+              <tr>
+                <th>Su</th>
+                <th>Mo</th>
+                <th>Tu</th>
+                <th>We</th>
+                <th>Th</th>
+                <th>Fr</th>
+                <th>Sa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="weekend off ends available" data-title="r0c0">27</td>
+                <td class="off ends available" data-title="r0c1">28</td>
+                <td class="off ends available" data-title="r0c2">29</td>
+                <td class="off ends available" data-title="r0c3">30</td>
+                <td class="off ends available" data-title="r0c4">31</td>
+                <td class="available" data-title="r0c5">1</td>
+                <td class="weekend available" data-title="r0c6">2</td>
+              </tr>
+              <tr>
+                <td class="weekend available" data-title="r1c0">3</td>
+                <td class="available" data-title="r1c1">4</td>
+                <td class="available" data-title="r1c2">5</td>
+                <td class="available" data-title="r1c3">6</td>
+                <td class="available" data-title="r1c4">7</td>
+                <td class="available" data-title="r1c5">8</td>
+                <td class="weekend available" data-title="r1c6">9</td>
+              </tr>
+              <tr>
+                <td class="weekend available" data-title="r2c0">10</td>
+                <td class="available" data-title="r2c1">11</td>
+                <td class="available" data-title="r2c2">12</td>
+                <td class="available" data-title="r2c3">13</td>
+                <td class="available" data-title="r2c4">14</td>
+                <td class="available" data-title="r2c5">15</td>
+                <td class="weekend available" data-title="r2c6">16</td>
+              </tr>
+              <tr>
+                <td class="weekend available" data-title="r3c0">17</td>
+                <td class="available" data-title="r3c1">18</td>
+                <td class="available" data-title="r3c2">19</td>
+                <td class="available" data-title="r3c3">20</td>
+                <td class="available" data-title="r3c4">21</td>
+                <td class="available" data-title="r3c5">22</td>
+                <td class="weekend available" data-title="r3c6">23</td>
+              </tr>
+              <tr>
+                <td class="today weekend active start-date active end-date available" data-title="r4c0">24</td>
+                <td class="available" data-title="r4c1">25</td>
+                <td class="available" data-title="r4c2">26</td>
+                <td class="available" data-title="r4c3">27</td>
+                <td class="available" data-title="r4c4">28</td>
+                <td class="available" data-title="r4c5">29</td>
+                <td class="weekend available" data-title="r4c6">30</td>
+              </tr>
+              <tr>
+                <td class="weekend off ends available" data-title="r5c0">1</td>
+                <td class="off ends available" data-title="r5c1">2</td>
+                <td class="off ends available" data-title="r5c2">3</td>
+                <td class="off ends available" data-title="r5c3">4</td>
+                <td class="off ends available" data-title="r5c4">5</td>
+                <td class="off ends available" data-title="r5c5">6</td>
+                <td class="weekend off ends available" data-title="r5c6">7</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="calendar-time" style="display: none"></div>
+      </div>
+      <div class="drp-calendar right" style="display: none">
+        <div class="calendar-table">
+          <table class="table-condensed">
+            <thead>
+              <tr>
+                <th></th>
+                <th colspan="5" class="month">
+                  <select class="monthselect">
+                    <option value="0" disabled="disabled">Jan</option>
+                    <option value="1" disabled="disabled">Feb</option>
+                    <option value="2" disabled="disabled">Mar</option>
+                    <option value="3">Apr</option>
+                    <option value="4" selected="selected">May</option>
+                    <option value="5">Jun</option>
+                    <option value="6">Jul</option>
+                    <option value="7">Aug</option>
+                    <option value="8">Sep</option>
+                    <option value="9">Oct</option>
+                    <option value="10">Nov</option>
+                    <option value="11">Dec</option></select
+                  ><select class="yearselect">
+                    <option value="2022" selected="selected">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                    <option value="2033">2033</option>
+                    <option value="2034">2034</option>
+                    <option value="2035">2035</option>
+                    <option value="2036">2036</option>
+                    <option value="2037">2037</option>
+                    <option value="2038">2038</option>
+                    <option value="2039">2039</option>
+                    <option value="2040">2040</option>
+                    <option value="2041">2041</option>
+                    <option value="2042">2042</option>
+                    <option value="2043">2043</option>
+                    <option value="2044">2044</option>
+                    <option value="2045">2045</option>
+                    <option value="2046">2046</option>
+                    <option value="2047">2047</option>
+                    <option value="2048">2048</option>
+                    <option value="2049">2049</option>
+                    <option value="2050">2050</option>
+                  </select>
+                </th>
+                <th class="next available"><span></span></th>
+              </tr>
+              <tr>
+                <th>Su</th>
+                <th>Mo</th>
+                <th>Tu</th>
+                <th>We</th>
+                <th>Th</th>
+                <th>Fr</th>
+                <th>Sa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="today weekend off ends active start-date active end-date available" data-title="r0c0">24</td>
+                <td class="off ends available" data-title="r0c1">25</td>
+                <td class="off ends available" data-title="r0c2">26</td>
+                <td class="off ends available" data-title="r0c3">27</td>
+                <td class="off ends available" data-title="r0c4">28</td>
+                <td class="off ends available" data-title="r0c5">29</td>
+                <td class="weekend off ends available" data-title="r0c6">30</td>
+              </tr>
+              <tr>
+                <td class="weekend available" data-title="r1c0">1</td>
+                <td class="available" data-title="r1c1">2</td>
+                <td class="available" data-title="r1c2">3</td>
+                <td class="available" data-title="r1c3">4</td>
+                <td class="available" data-title="r1c4">5</td>
+                <td class="available" data-title="r1c5">6</td>
+                <td class="weekend available" data-title="r1c6">7</td>
+              </tr>
+              <tr>
+                <td class="weekend available" data-title="r2c0">8</td>
+                <td class="available" data-title="r2c1">9</td>
+                <td class="available" data-title="r2c2">10</td>
+                <td class="available" data-title="r2c3">11</td>
+                <td class="available" data-title="r2c4">12</td>
+                <td class="available" data-title="r2c5">13</td>
+                <td class="weekend available" data-title="r2c6">14</td>
+              </tr>
+              <tr>
+                <td class="weekend available" data-title="r3c0">15</td>
+                <td class="available" data-title="r3c1">16</td>
+                <td class="available" data-title="r3c2">17</td>
+                <td class="available" data-title="r3c3">18</td>
+                <td class="available" data-title="r3c4">19</td>
+                <td class="available" data-title="r3c5">20</td>
+                <td class="weekend available" data-title="r3c6">21</td>
+              </tr>
+              <tr>
+                <td class="weekend available" data-title="r4c0">22</td>
+                <td class="available" data-title="r4c1">23</td>
+                <td class="available" data-title="r4c2">24</td>
+                <td class="available" data-title="r4c3">25</td>
+                <td class="available" data-title="r4c4">26</td>
+                <td class="available" data-title="r4c5">27</td>
+                <td class="weekend available" data-title="r4c6">28</td>
+              </tr>
+              <tr>
+                <td class="weekend available" data-title="r5c0">29</td>
+                <td class="available" data-title="r5c1">30</td>
+                <td class="available" data-title="r5c2">31</td>
+                <td class="off ends available" data-title="r5c3">1</td>
+                <td class="off ends available" data-title="r5c4">2</td>
+                <td class="off ends available" data-title="r5c5">3</td>
+                <td class="weekend off ends available" data-title="r5c6">4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="calendar-time" style="display: none"></div>
+      </div>
+      <div class="drp-buttons">
+        <span class="drp-selected">2022-04-24 - 2022-04-24</span><button class="cancelBtn btn btn-sm btn-default" type="button">Cancel</button
+        ><button class="applyBtn btn btn-sm btn-primary" type="button">Apply</button>
+      </div>
+    </div>
+    <div class="daterangepicker ltr single auto-apply opensright">
+      <div class="ranges"></div>
+      <div class="drp-calendar left single" style="display: block">
+        <div class="calendar-table"></div>
+        <div class="calendar-time" style="display: none"></div>
+      </div>
+      <div class="drp-calendar right" style="display: none">
+        <div class="calendar-table"></div>
+        <div class="calendar-time" style="display: none"></div>
+      </div>
+      <div class="drp-buttons">
+        <span class="drp-selected"></span><button class="cancelBtn btn btn-sm btn-default" type="button">Cancel</button
+        ><button class="applyBtn btn btn-sm btn-primary" disabled="disabled" type="button">Apply</button>
+      </div>
+    </div>
+  </body>
+</html>
